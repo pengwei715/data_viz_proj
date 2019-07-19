@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple CSS</title>
+    <link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Welcome to Harvard University<br>The Harvard FactBook</h1>
+
+<p class="main"><a href="http://www.harvard.edu/" target="_blank">Harvard University</a>
+    is the oldest institution of higher education in the United States, established in 1636 by vote of the Great and General Court of the Massachusetts Bay Colony.
+</p>
+<br>
+<div class="row">
+    <div class="col-xs-6">
+        <button id="cs171-basics" class="btn btn-primary">Fun Facts</button>
+        <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                More Information
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="http://www.harvard.edu/" target="_blank">Main Page</a></li>
+                <li><a href="https://college.harvard.edu/admissions" target="_blank">Admissions</a></li>
+                <li><a href="https://college.harvard.edu/academics" target="_blank">Academics</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="https://www.facebook.com/Harvard/" target="_blank">Facebook</a></li>
+            </ul>
+        </div>
+        <div id="content">
+        </div>
+    </div>
+    <div class="col-xs-6">
+        <img src="Harvard.jpg">
+        <br>
+        <br>
+        <img src="Harvard2.jpg" width="600" height="400">
+    </div>
+</div>
+<br>
+
+<script src="http://www.cs171.org/2016/assets/scripts/dom-example.js"></script>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

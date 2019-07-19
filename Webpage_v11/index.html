@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Data Visualization - Conflict in Syria">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <title>Visualizing the Crisis in Syria</title>
+
+    <!-- Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+    <!-- Bootstrap / other css -->
+    <link rel="stylesheet" href="css/timeline.css?v1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML elements--><!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+
+
+</head>
+<body class="noscroll">
+
+
+<nav class="navbar navbar-default navbar-fixed-top noBackground" id="navbar" style="visibility:hidden;">
+    <div class="navbar-header">
+        <a href="#intro">CS171</a>
+    </div>
+    <div>
+        <ul class="nav navbar-nav" id="myMenu">
+            <li id="intro_nav" data_panelid="introSection" class="navbutton navselect"><a href="#intro">Introduction</a></li>
+            <li id="violenceMap_nav" data_panelid="violenceMapSection" class="navbutton"><a href="#violenceMapSection">How is violence spreading?</a></li>
+            <li id="actorChord_nav" data_panelid="actorChordSection" class="navbutton"><a href="#actorChordSection">Who is fighting?</a></li>
+            <li id="casualty_nav" data_panelid="casualtySection" class="navbutton"><a href="#casualtySection">Who are the victims?</a></li>
+            <li id="refugeeMap_nav" data_panelid="campSection" class="navbutton"><a href="#campSection">Where are they going?</a></li>
+            <li id="actionMap_nav" data_panelid="actionMapSection" class="navbutton"><a href="#actionMapSection">Who is helping?</a></li>
+            <li id="keyTakeaways_nav" data_panelid="keyTakeawaysSection" class="navbutton"><a href="#keyTakeawaysSection">Takeaways</a></li>
+            <li id="aboutUs_nav" data_panelid="aboutSection" class="navbutton"><a href="#aboutSection">About Us</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+    <!-- ..................................................................................... -->
+    <!-- Title page -->
+    <!-- ..................................................................................... -->
+
+    <div class="section" id="introSection">
+        <i class="fa fa-arrow-circle-o-down fa-3x downbutton" aria-hidden="true" style="visibility:hidden;"></i>
+
+
+        <div class="containervertical">
+            <div class="row">
+                <!---<div class="col-xs-12 col-md-12 height360">
+                    <div class="loader">
+                            <p style="width: 700px; margin-left: 30%; margin-top: 150px; text-align: justify; font-size: 28px">"We were not rich, but we were not poor. We lived a fine life... We don't want more, or less, than that."</p>
+                            <p style="width: 700px; margin-left: 30%; text-align: right">— Doaa al-Faouri, Syrian Refugee in Zaatari Camp, reported by <a href="http://www.independent.co.uk/news/world/middle-east/syrian-civil-war-fifth-anniversary-child-refugees-refugee-crisis-a6930426.html" class="whitelink" target="_blank">Independent</a>, March 16, 2016</p>
+                    </div>--->
+                <div class="row">
+                    <h1 class="title-name"><span class="fixing">.</span><span class="fadeOnLoad0">VISUALIZING THE CRISIS IN SYRIA</span> </h1><br/><br>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-3 text-center fadeOnLoad1 fact pulse">
+                        <div class="title-numbers"><span class="fixing">.</span>12 million</div><div class="title-numbers-name"> displaced</div>
+                    </div>
+                    <div class="col-xs-12 col-md-3 text-center fadeOnLoad2 fact pulse">
+                        <div class="title-numbers">5 million</div><div class="title-numbers-name"> refugees</div>
+                    </div>
+                    <div class="col-xs-12 col-md-3 text-center fadeOnLoad3 fact pulse">
+                        <div class="title-numbers">1 million</div><div class="title-numbers-name"> children refugees</div>
+                    </div>
+                    <div class="col-xs-12 col-md-3 text-center fadeOnLoad4 fact pulse">
+                        <div class="title-numbers">500,000</div><div class="title-numbers-name"> dead</div>
+                    </div>
+                </div>
+                <br><br>
+                <div class="row col-xs-12 col-md-12 text-center subtitle-name fadeOnLoad5">
+                    <span class="fixing">.</span>“The world’s largest humanitarian crisis” (UN)
+                </div>
+            </div>
+            <!--<div class="col-xs-12 col-md-1"></div>-->
+        </div>
+
+        <div class="containerbottom">
+            <div class="row">
+                <div class="col-xs-12 col-md-3">Image: <a href="#creditsSection" class="whitelink">Syrian Children</a></div>
+                <div class="col-xs-12 col-md-3"></div>
+                <div class="col-xs-12 col-md-6 text-right"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- ..................................................................................... -->
+    <!-- Video embedding -->
+    <!-- ..................................................................................... -->
+
+    <div class="section" id="screencast">
+        <i class="fa fa-arrow-circle-o-up fa-3x upbutton" aria-hidden="true" ></i>
+        <i class="fa fa-arrow-circle-o-down fa-3x downbutton" aria-hidden="true" ></i>
+
+        <div class="containervertical" style="text-align: center;">
+            <!--<iframe width="853" height="480"
+                    src="https://www.youtube.com/embed/pPS826Evswg?controls=0"
+                    frameborder="0" allowfullscreen>
+
+            </iframe>-->
+
+            <iframe width="853" height="480" src="https://www.youtube.com/embed/pPS826Evswg?rel=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="containerbottom">
+            <div class="row">
+                <div class="col-xs-12 col-md-3">Music: <a href="#creditsSection" class="whitelink">Ofelia's Dream</a></div>
+                <div class="col-xs-12 col-md-3"></div>
+                <div class="col-xs-12 col-md-6 text-right"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--
+        <div class="col-xs-12 col-md-5 text-center">
+            <iframe width="480" height="360" src="https://www.youtube.com/embed/DLzxrzFCyOs" frameborder="0" allowfullscreen></iframe>
+        </div>-->
+
+
+    <!-- ..................................................................................... -->
+    <!-- Violence Map Graph -->
+    <!-- ..................................................................................... -->
+
+    <div class="section" id="violenceMapSection">
+        <i class="fa fa-arrow-circle-o-up fa-3x upbutton" aria-hidden="true" ></i><div></div>
+        <i class="fa fa-arrow-circle-o-down fa-3x downbutton" aria-hidden="true" ></i>
+
+        <div class="containervertical blackbackgroundsoft">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <h2>How is violence spreading? A timeline of reported violence.</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-7">
+                        <div id="violencemap"></div>
+                        <div class="row">
+                            <div class="col-xs-2" style="padding-right: 0px; padding-top: 10px;">
+                                <div id="playviolence" class="btn btn-default vm_play playbutton">
+                                    <i class="fa fa-play"></i>&nbsp; Play
+                                </div>
+                                <div id="playviolence2" class="btn btn-default vm_play playbutton">
+                                    <i class="fa fa-forward"></i>&nbsp; Play selection
+                                </div>
+                                <div id="playviolence3" class="btn btn-default vm_play playbutton">
+                                    <i class="fa fa-pause"></i>&nbsp; Pause
+                                </div>
+                            </div>
+                            <div class="col-xs-10 text-right">
+                                <div id="timeline"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-5">
+                        <div class="btn-group" role="group">
+                            <input type="button" class="btn btn-default vm_button selected" id="vm_overview" class="vm_button" data-panelid="vm_overview_legend" value="All events">
+                            <input type="button" class="btn btn-default vm_button" id="vm_actortypes" class="vm_button" data-panelid="vm_actortypes_legend" value="Actors">
+                            <input type="button"  class="btn btn-default vm_button" id="vm_violencetypes" class="vm_button" data-panelid="vm_violencetypes_legend" value="Type of violence">
+                        </div><br/>
+                        <div id="vm_overview_legend" class="vm_legend"></div>
+                        <div id="vm_actortypes_legend" class="vm_legend"></div>
+                        <div id="vm_violencetypes_legend" class="vm_legend"></div>
+                        <div id="vm_overall_legend" class="vm_overall_legend"><br/>
+                            <table class="legendtable">
+                                <tr>
+                                    <td>
+                                        <svg width="70px" height="30px">
+                                            <circle cx="15" cy="15" r="15" fill="lightgrey" opacity="0.6" ></circle>
+                                            <circle cx="15" cy="15" r="15" fill="red" opacity="0.5" stroke="white"></circle>
+                                            <circle cx="50" cy="15" r="8" fill="lightgrey" opacity="0.6" ></circle>
+                                            <circle cx="50" cy="15" r="8" fill="red" opacity="0.5" stroke="white"></circle>
+                                        </svg>
+                                    </td><td>Each circle represents a violent event. Circles are larger the more recent the event.</td>
+                                </tr>
+                                <tr>
+                                    <td id="countercell" class="counter" style="font-size: 1.5em;">8,395</td><td>Number of registered refugees per country</td>
+                                </tr>
+                                <tr>
+                                    <td><i class='fa fa-male fa-2x'></i> <i class='fa fa-female fa-2x'></i></td><td>Each represents 100,000 refugees (independent of gender)</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="containerbottom">
+            <div class="row">
+                <div class="col-xs-12 col-md-4">Image: <a href="#creditsSection" class="whitelink">Syrian woman in front her home as FSA fighters stand guard</a></div>
+                <div class="col-xs-12 col-md-2">Data: <a href="#creditsSection" class="whitelink">ICEWS, UNHCR</a></div>
+                <div class="col-xs-12 col-md-6 text-right"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ..................................................................................... -->
+    <!-- QUOTE -->
+    <!-- ..................................................................................... -->
+    <div class="section" id="quotesSection1">
+        <i class="fa fa-arrow-circle-o-up fa-3x upbutton" aria-hidden="true" ></i>
+        <i class="fa fa-arrow-circle-o-down fa-3x downbutton" aria-hidden="true" ></i>
+
+        <div class="containervertical">
+
+            <div class="quotesSections">
+
+                <p class="quote">“My drawing is of planes and tanks attacking the city and bombing schools, homes and mosques.”</p>
+                <p class="quoteAuthor">— 11-year-old Syrian Refugee girl drawing at the Domiz camp in northern Iraq, reported by <a href="http://www.independent.co.uk/voices/comment/through-their-eyes-children-who-fled-the-violence-draw-picture-of-syria-crisis-8654292.html" class="whitelink" target="_blank">Wendy Bruere</a>, UNICEF, Jun. 11, 2013.</p>
+                <br>
+                <p class="quote"> “My drawing is of dead and injured people in the street because of indiscriminate bombing.”</p>
+                <p class="quoteAuthor">— Another 11-year-old Syrian Refugee girl drawing at the Domiz camp in northern Iraq, reported by <a href="http://www.independent.co.uk/voices/comment/through-their-eyes-children-who-fled-the-violence-draw-picture-of-syria-crisis-8654292.html" class="whitelink" target="_blank">Wendy Bruere</a>, UNICEF, Jun. 11, 2013.</p>
+
+            </div>
+
+        </div>
+        <div class="containerbottom">
+            <div class="row">
+                <div class="col-xs-12 col-md-3">Image: <a href="#creditsSection" class="whitelink">Through Their Eyes</a></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ..................................................................................... -->
+    <!-- ACTORS: Who is fighting? -->
+    <!-- ..................................................................................... -->
+
+    <div class="section" id="actorChordSection">
+        <i class="fa fa-arrow-circle-o-up fa-3x upbutton" aria-hidden="true" ></i>
+        <i class="fa fa-arrow-circle-o-down fa-3x downbutton" aria-hidden="true" ></i>
+
+
+        <div class="containervertical blackbackgroundsoft">
+            <h2>Who is fighting? Sources and targets of reported violence</h2>
+            <div class="">
+                <div id="cont" class="container-fluid">
+                    <div class="row text-center">
+
+                        <!-- CHORD CHART -->
+                        <div class="col-md-5">
+                            <div id="chordchart"></div>
+
+                            <div align="center">
+                                <div id="progress"></div>
+                                <div id="clicker" class="clicker">START</div>
+                            </div>
+                            <div>
+                                <div class="col-ms-4" id="skip">SKIP INTRO</div>
+                                <div class="col-ms-4" id="reset">RESET</div>
+                            </div>
+                        </div>
+
+                        <!-- STACKED CHART -->
+                        <div class="col-md-7" align="left">
+                            <div id="actorStacked"></div>
+                            <table class="legendActorChord">
+                                <td>
+                                    <tr>
+                                        <td class="tdActorChord"><img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCIgdmlld0JveD0iMCAwIDQ1MS44NDYgNDUxLjg0NyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDUxLjg0NiA0NTEuODQ3OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggZD0iTTM0NS40NDEsMjQ4LjI5MkwxNTEuMTU0LDQ0Mi41NzNjLTEyLjM1OSwxMi4zNjUtMzIuMzk3LDEyLjM2NS00NC43NSwwYy0xMi4zNTQtMTIuMzU0LTEyLjM1NC0zMi4zOTEsMC00NC43NDQgICBMMjc4LjMxOCwyMjUuOTJMMTA2LjQwOSw1NC4wMTdjLTEyLjM1NC0xMi4zNTktMTIuMzU0LTMyLjM5NCwwLTQ0Ljc0OGMxMi4zNTQtMTIuMzU5LDMyLjM5MS0xMi4zNTksNDQuNzUsMGwxOTQuMjg3LDE5NC4yODQgICBjNi4xNzcsNi4xOCw5LjI2MiwxNC4yNzEsOS4yNjIsMjIuMzY2QzM1NC43MDgsMjM0LjAxOCwzNTEuNjE3LDI0Mi4xMTUsMzQ1LjQ0MSwyNDguMjkyeiIgZmlsbD0iI0ZGRkZGRiIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" /></td>
+                                        <td>Learn about total reported violence with the chord diagram.
+                                            <br>
+                                            Hover over the bar chart and the legends. Change the filters.
+                                        </td>
+                                    </tr>
+                                </td>
+                            </table>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="containerbottom">
+            <div class="row">
+                <div class="col-xs-12 col-md-4">Image: <a href="#creditsSection" class="whitelink">Kurdish YPG Fighters</a></div>
+                <div class="col-xs-12 col-md-2">Data: <a href="#creditsSection" class="whitelink">ICEWS</a></div>
+                <div class="col-xs-12 col-md-6 text-right">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ..................................................................................... -->
+    <!-- QUOTE -->
+    <!-- ..................................................................................... -->
+    <div class="section" id="quotesSection2">
+        <i class="fa fa-arrow-circle-o-up fa-3x upbutton" aria-hidden="true" ></i>
+        <i class="fa fa-arrow-circle-o-down fa-3x downbutton" aria-hidden="true" ></i>
+
+        <div class="containervertical">
+
+            <div class="quotesSections">
+
+                <p class="quote">“In village after village, we found a civilian population terrified by their country’s own air force. These illegal air strikes killed and injured many civilians and sowed a path of destruction, fear, and displacement.”</p>
+                <p class="quoteAuthor">— Ole Solvang, Emergencies Researcher at <a href="http://www.hrw.org/news/2013/04/10/syria-aerial-attacks-strike-civilians" class="whitelink" target="_blank">Human Rights Watch</a>, Apr. 10, 2013.</p>
+
+            </div>
+        </div>
+        <div class="containerbottom">
+            <div class="row">
+                <div class="col-xs-12 col-md-3">Image: <a href="#creditsSection" class="whitelink">Syrian refugees - Brussels</a></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ..................................................................................... -->
+    <!-- CASUALTIES: Who are the victims? -->
+    <!-- ..................................................................................... -->
+    <div class="section" id="casualtySection">
+        <i class="fa fa-arrow-circle-o-up fa-3x upbutton" aria-hidden="true" ></i>
+        <i class="fa fa-arrow-circle-o-down fa-3x downbutton" aria-hidden="true" ></i>
+
+        <div class="buttongroup row containervertical" id="progressbuttons">
+            <span id="ca_back"><i class="fa fa-play-circle fa-4x fa-rotate-180" style="padding: 10px;"></i></span>
+            <!--<span id="ca_forward"><i class="fa fa-play-circle fa-4x"></i></span>-->
+
+        </div>
+        <div id="clicker2" class="clicker2">START</div>
+        <div id="ca_forward" class="clicker2">NEXT</div>
+        <div id="ca_startover" class="clicker3">RESET</div>
+
+
+        <div class="containervertical blackbackgroundsoft">
+            <h2>Who are the victims?</h2>
+            <h4>In memoriam of the victims of the Syrian conflict.</h4>
+            <div class="row">
+                <div class="col-md-10">
+                    <div id="casualtychart"></div>
+                </div>
+                <div class="col-md-2">
+
+                    <div class="buttongroup" id="ca_buttons">
+                        <button type="button" id="ca_allpeople" class="btn btn-default ca_button" data-panelid="ca_allpeople_legend" selected_value="allpeople">All casualties</button>
+                        <button type="button" id="ca_gender" class="btn btn-default ca_button" data-panelid="ca_gender_legend" selected_value="gender">By gender</button>
+                        <button type="button" id="ca_age" class="btn btn-default ca_button" data-panelid="ca_age_legend"  selected_value="age">By age</button>
+                        <button type="button" id="ca_sex" class="btn btn-default ca_button" data-panelid="ca_sex_legend"  selected_value="sex">By gender and age</button>
+                        <button type="button" id="ca_deathcause" class="btn btn-default ca_button" data-panelid="ca_deathcause_legend" selected_value="deathcause">Rearrange by death cause</button>
+                    </div>
+                    <div id="ca_allpeople_legend" class="ca_legend"></div>
+                    <div id="ca_gender_legend" class="ca_legend"></div>
+                    <div id="ca_age_legend" class="ca_legend"></div>
+                    <div id="ca_sex_legend" class="ca_legend"></div>
+                    <div id="ca_deathcause_legend" class="ca_legend"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="containerbottom">
+            <div class="row">
+                <div class="col-xs-12 col-md-4">Image: <a href="#creditsSection" class="whitelink">Graveyard Playground BW</a></div>
+                <div class="col-xs-12 col-md-6">Data: <a href="#creditsSection" class="whitelink">Violence Documentation Center</a></div>
+                <div class="col-xs-12 col-md-2 text-right"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ..................................................................................... -->
+    <!-- QUOTE -->
+    <!-- ..................................................................................... -->
+    <div class="section" id="quotesSection3">
+        <i class="fa fa-arrow-circle-o-up fa-3x upbutton" aria-hidden="true" ></i>
+        <i class="fa fa-arrow-circle-o-down fa-3x downbutton" aria-hidden="true" ></i>
+
+        <div class="containervertical">
+            <div class="quotesSections">
+
+                <p class="quote">“Bodies of those killed are placed on display for several days, terrorising the local population.”</p>
+                <p class="quoteAuthor">— <a href="http://www.ohchr.org/Documents/HRBodies/HRCouncil/CoISyria/A.HRC.27.60_Eng.pdf" class="whitelink" target="_blank">Report</a> of the U.N.’s Independent International Commission of Inquiry on the Syrian Arab Republic, Aug. 13, 2014.</p>
+
+            </div>
+        </div>
+        <div class="containerbottom">
+            <div class="row">
+                <div class="col-xs-12 col-md-3">Image: <a href="#creditsSection" class="whitelink">Syrian man carries the body of a victim</a></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ..................................................................................... -->
+    <!-- Refugee Camps: Where are they going? -->
+    <!-- ..................................................................................... -->
+    <div class="section" id="campSection">
+        <i class="fa fa-arrow-circle-o-up fa-3x upbutton" aria-hidden="true" ></i>
+        <i class="fa fa-arrow-circle-o-down fa-3x downbutton" aria-hidden="true" ></i>
+
+        <div class="containervertical blackbackgroundsoft">
+            <h2>Where are they going?</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-7">
+                        <div id="refugeemap"></div>
+                        <div class="row">
+                            <div class="col-xs-1 jumbotron vertical-center">
+                                <div id="playcamp" class="btn btn-default cp_play"><i class="fa fa-play fa-lg"></i></div>
+                            </div>
+                            <div class="col-xs-11">
+                                <div id="timeslide"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-5">
+                        <div id="refugeeStackedbuttons">
+                            <div class="btn-group" role="group" id="refugeeStackedbuttons2">
+                                <input type="button" class="btn btn-default cp_button" id="level_1" value="By country">
+                                <input type="button" class="btn btn-default cp_button" id="level_3" value="By refugee camp">
+                            </div>
+                        </div>
+                        <br/>
+                        <div id="refugeestacked"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="containerbottom">
+            <div class="row">
+                <div class="col-xs-12 col-md-4">Image: <a href="#creditsSection" class="whitelink">A Syrian refugee carrying his child</a></div>
+                <div class="col-xs-12 col-md-2">Data: <a href="#creditsSection" class="whitelink">UNHCR</a></div>
+                <div class="col-xs-12 col-md-6 text-right">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ..................................................................................... -->
+    <!-- QUOTE -->
+    <!-- ..................................................................................... -->
+    <div class="section" id="quotesSection4">
+        <i class="fa fa-arrow-circle-o-up fa-3x upbutton" aria-hidden="true" ></i>
+        <i class="fa fa-arrow-circle-o-down fa-3x downbutton" aria-hidden="true" ></i>
+
+        <div class="containervertical">
+            <div class="quotesSections">
+                <p class="quote">“In Arabic we say that the worst situations actually make you smile, so I’m smiling... We know we have a difficult life ahead, but we escaped death.”</p>
+                <p class="quoteAuthor">— Qassem, Syrian Refugee in Jordan, being interviewed by the <a href="http://worldnews.nbcnews.com/_news/2013/01/15/16519776-we-escaped-death-syrian-refugees-struggle-with-cold-hunger-and-uncertainty?lite" class="whitelink" target="_blank">NBC</a> in a tent with no electricity or heat that was a new home to him and his family, Jan. 15, 2013.</p>
+            </div>
+        </div>
+        <div class="containerbottom">
+            <div class="row">
+                <div class="col-xs-12 col-md-3">Image: <a href="#creditsSection" class="whitelink">Daily life in Zaatari refugee camp in Jordan</a></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ..................................................................................... -->
+    <!-- Action: Who is helping? -->
+    <!-- ..................................................................................... -->
+
+    <div class="section" id="actionMapSection">
+        <i class="fa fa-arrow-circle-o-up fa-3x upbutton" aria-hidden="true" ></i>
+        <i class="fa fa-arrow-circle-o-down fa-3x downbutton" aria-hidden="true" ></i>
+
+        <div class="containervertical">
+            <h2>Who is helping?</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-7">
+                        <div id="actionmap"></div>
+                    </div>
+                    <div class="col-xs-12 col-md-5">
+                        <div id="actionMapbuttons">
+                            <div class="btn-group" role="group" id="actionMapbuttons2">
+                                <input type="button" class="btn btn-default am_button selected" id="refugee" value="Refugee count">
+                                <input type="button" class="btn btn-default am_button" id="per_gdppc" value="By income">
+                                <input type="button" class="btn btn-default am_button" id="per_1000pop" value="By population">
+                            </div>
+                        </div>
+                        <div class="jumbotron vertical-center" id="actionmap-content"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="containerbottom">
+            <div class="row">
+                <div class="col-xs-12 col-md-4">Image: <a href="#creditsSection" class="whitelink">Syrian Refugees</a></div>
+                <div class="col-xs-12 col-md-2">Data: <a href="#creditsSection" class="whitelink">UNHCR, WDI</a></div>
+                <div class="col-xs-12 col-md-6 text-right">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ..................................................................................... -->
+    <!-- QUOTE -->
+    <!-- ..................................................................................... -->
+    <div class="section" id="quotesSection5">
+        <i class="fa fa-arrow-circle-o-up fa-3x upbutton" aria-hidden="true" ></i>
+        <i class="fa fa-arrow-circle-o-down fa-3x downbutton" aria-hidden="true" ></i>
+
+        <div class="containervertical">
+            <div class="quotesSections">
+                <p class="quote">"The international community has failed in its most elemental duties — to protect civilians, halt and prevent atrocities and create a path toward accountability."</p>
+                <p class="quoteAuthor">— Paulo Pinheiro, chairman of the U.N.’s Independent International Commission of Inquiry, <a href="http://www.bbc.com/news/world-middle-east-28948555" class="whitelink" target="_blank">BBC News</a>, Aug. 27, 2014.</p>
+            </div>
+        </div>
+        <div class="containerbottom">
+            <div class="row">
+                <div class="col-xs-12 col-md-3">Image: <a href="#creditsSection" class="whitelink">Refugee Camp</a></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ..................................................................................... -->
+    <!-- KEY TAKEAWAYS -->
+    <!-- ..................................................................................... -->
+
+    <div class="section" id="keyTakeawaysSection">
+        <i class="fa fa-arrow-circle-o-up fa-3x upbutton" aria-hidden="true" ></i>
+        <i class="fa fa-arrow-circle-o-down fa-3x downbutton" aria-hidden="true" ></i>
+
+
+
+        <div class="containervertical">
+            <h2>Timeline of key takeaways</h2>
+            <div id="cont2" class="container-fluid">
+                <div class="row text-center">
+
+                    <!-- TAKEAWAYS TIMELINE -->
+                    <div class="col-md-12" align="center">
+                        <div id="timelineKeyTakeaways"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="containerbottom">
+            <div class="row">
+                <div class="col-xs-12 col-md-2">Image: <a href="#creditsSection" class="whitelink">Syria, Aleppo</a></div>
+                <div class="col-xs-12 col-md-2">Data: <a href="#creditsSection" class="whitelink">BBC</a></div>
+                <div class="col-xs-12 col-md-2">Plugin: <a href="#creditsSection" class="whitelink">TimelineJS3</a></div>
+                <div class="col-xs-12 col-md-6 text-right">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ..................................................................................... -->
+    <!-- QUOTE -->
+    <!-- ..................................................................................... -->
+    <div class="section" id="quotesSection6">
+        <i class="fa fa-arrow-circle-o-up fa-3x upbutton" aria-hidden="true" ></i>
+        <i class="fa fa-arrow-circle-o-down fa-3x downbutton" aria-hidden="true" ></i>
+
+        <div class="containervertical">
+            <div class="quotesSections">
+                <p class="quote">“What is at stake is nothing less than the survival and wellbeing of a generation of innocents.”</p>
+                <p class="quoteAuthor">— Antonio Guterres, <a href="http://www.unhcr.org/521621999.html" class="whitelink" target="_blank">High Commissioner of the UN refugee agency (UNHCR)</a>, Aug. 23, 2013.</p>
+            </div>
+        </div>
+        <div class="containerbottom">
+            <div class="row">
+                <div class="col-xs-12 col-md-12">Image: <a href="#creditsSection" class="whitelink">Syrian primary school children attending catch-up learning classes in Lebanon</a></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ..................................................................................... -->
+    <!-- ABOUT US -->
+    <!-- ..................................................................................... -->
+
+    <div class="section" id="aboutSection">
+        <i class="fa fa-arrow-circle-o-up fa-3x upbutton" aria-hidden="true" ></i>
+        <i class="fa fa-arrow-circle-o-down fa-3x downbutton" aria-hidden="true" ></i>
+
+
+
+        <div class="containervertical">
+            <h1 class="text-center">About Us</h1>
+            <br/>
+            <!-- Team pictures -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-4 text-center">
+                        <div class="circular circularMar"></div><br/>
+                        <p><strong>Mar Carpanelli</strong><p>
+                        <p><a href="mailto:maria_carpanelli@hks16.harvard.edu" class="emails"><i class="fa fa-envelope" aria-hidden="true" ></i>  maria_carpanelli@hks16.harvard.edu</a></p>
+                        <p>
+                            <a href="http://twitter.com/marcarpanelli" target="_blank" class="emails"> <i class="fa fa-twitter fa-2x" aria-hidden="true" ></i></a>&emsp; &emsp;
+                            <a href="http://www.instagram.com/mcarpanelli/" target="_blank"  class="emails"> <i class="fa fa-instagram fa-2x" aria-hidden="true" ></i></a>&emsp; &emsp;
+                            <a href="http://www.linkedin.com/in/mcarpanelli/en" target="_blank" class="emails"> <i class="fa fa-linkedin fa-2x" aria-hidden="true" ></i></a>
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-md-4 text-center">
+                        <div class="circular circularLil"></div><br/>
+                        <p><strong>Lily Li</strong><p>
+                        <p><a href="mailto:li_li@hks16.harvard.edu" class="emails"><i class="fa fa-envelope" aria-hidden="true" ></i>  li_li@hks16.harvard.edu</a></p>
+                        <p>
+                            <a href="http://twitter.com/lily8710" target="_blank"  class="emails"> <i class="fa fa-twitter fa-2x" aria-hidden="true" ></i></a>&emsp; &emsp;
+                            <a href="http://www.instagram.com/lilypad_li/" target="_blank"  class="emails"> <i class="fa fa-instagram fa-2x" aria-hidden="true" ></i></a>&emsp; &emsp;
+                            <a href="http://www.linkedin.com/in/li-lily-li-712b9524" target="_blank" class="emails"> <i class="fa fa-linkedin fa-2x" aria-hidden="true" ></i></a>
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-md-4 text-center">
+                        <div class="circular circularMaria"></div><br/>
+                        <p><strong>Maria Schwarz</strong><p>
+                        <p><a href="mailto:maria_schwarz@hks16.harvard.edu" class="emails"><i class="fa fa-envelope" aria-hidden="true" ></i>  maria_schwarz@hks16.harvard.edu</a></p>
+                        <p>
+                            <a href="http://twitter.com/maria_schwarz" target="_blank" class="emails"> <i class="fa fa-twitter fa-2x" aria-hidden="true" ></i></a>&emsp; &emsp;
+                            <a href="http://www.instagram.com/schwarz.maria/" target="_blank"  class="emails"> <i class="fa fa-instagram fa-2x" aria-hidden="true" ></i></a>&emsp; &emsp;
+                            <a href="http://www.linkedin.com/in/mariaschwarz" target="_blank" class="emails"> <i class="fa fa-linkedin fa-2x" aria-hidden="true" ></i></a>
+                        </p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <h2>Acknowledgements</h2>
+                        <p>We would like to thank the CS171 teaching team for the countless support in labs, studios and on piazza.
+                        We began our visualization journey with no prior knowledge in design or HTML/CSS/JS/D3 - without your support,
+                        planning, designing, and executing such a project would not have been feasible.</p>
+                        <p>We would further like to thank <a href="http://www.hks.harvard.edu/about/faculty-staff-directory/dara-kay-cohen" target="_blank">Dara Cohen</a>, <a href="http://www.anitagohdes.net/" target="_blank">Anita Gohdes</a> and Manuel Schoenfeld for their expert input on this project. Their input helped us to
+                            identify the  <a href="data/data_disclaimer.pdf" target="_blank">shortcomings</a> of the data sets we used and inspired us to push our visualizations further. Furthermore, thanks to Ishani Desai for lending her voice to our screencast.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="containerbottom">
+            <div class="row">
+                <div class="col-xs-12 col-md-4"></div>
+                <div class="col-xs-12 col-md-2"></div>
+                <div class="col-xs-12 col-md-6 text-right">
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- ..................................................................................... -->
+    <!-- Credits -->
+    <!-- ..................................................................................... -->
+
+    <div class="section" id="creditsSection">
+        <i class="fa fa-arrow-circle-o-up fa-3x upbutton" aria-hidden="true" ></i>
+
+        <div class="containervertical">
+            <h1 class="text-center">Credits</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-4 credits">
+                        <h3>Data sources</h3>
+                        <ul>
+                            <li><mark>Event data:</mark> Boschee, Elizabeth; Lautenschlager, Jennifer; O'Brien, Sean; Shellman, Steve; Starz, James; Ward, Michael, 2015, "ICEWS Coded Event Data",
+                                <a href="http://dx.doi.org/10.7910/DVN/28075" target="_blank">Harvard Dataverse V12</a>. Accessed February 2016. Timespan from March 2011 to Feb 2015.</li>
+                            <li><mark>Refugee flows and camps:</mark> <a href="http://data.unhcr.org/syrianrefugees/regional.php" target="_blank">UNHCR, Syria Regional Refugee Response</a>. Accessed April 05, 2016.</li>
+                            <li><mark>GDP and population:</mark><a href="http://data.worldbank.org/products/wdi"> World Development Indicators</a>. Accessed April 2016.</li>
+                            <li><mark>Casualty data:</mark> <a href="http://www.vdc-sy.info/index.php/en/home" target="_blank">Violations Documentations Center, Syria</a>. Accessed Apr 20, 2016. Includes Martyrs and Regime Fatalities. </li>
+                            <li><mark>Maps:</mark> <a href="http://www.naturalearthdata.com" target="_blank">Natural Earth</a> and <a href="http://www.gdal.org/ogr2ogr.html" target="_blank">ogr2ogr</a> </li>
+                            <li><mark>Takeaways Events:</mark> <a href="http://www.bbc.com/news/world-middle-east-14703995" target="_blank">BBC</a>. Accessed Apr 22, 2016. </li>
+                        </ul>
+                        <br/>
+                        <h3>Music (screencast)</h3>
+                        <a href="http://www.bensound.com/royalty-free-music/track/ofelias-dream" target="_blank">Ofelia's dream</a>
+                        by <a href="http://www.bensound.com/" target="_blank">Bensound</a>.
+                    </div>
+                    <div class="col-xs-12 col-md-5  credits creditsmiddle">
+                        <h3>Images</h3>
+                        <p>In order of appearance:</p>
+                        <ul>
+                            <li>
+                                <a href="https://www.flickr.com/photos/beshro/9918696743/" target="_blank">"Syrian Children"</a>
+                                by <a href="https://www.flickr.com/photos/beshro/" target="_blank">Beshr Abdulhadi</a>  is licensed under <a href="http://creativecommons.org/licenses/by/2.0/" target="_blank"> CC BY 2.0</a>.
+                            </li>
+                            <li>
+                                <a href="http://www.flickr.com/photos/syriafreedom/7054794007/" target="_blank">Syrian woman in front her home as FSA fighters stand guard</a>
+                                by <a href="http://www.flickr.com/photos/syriafreedom/" target="_blank">Freedom House</a>
+                                is licensed under <a href="http://creativecommons.org/licenses/by/2.0/" target="_blank">CC BY 2.0</a>.
+                            </li>
+                            <li>
+                                <a href="http://www.independent.co.uk/author/wendy-bruere" target="_blank">Through their eyes</a>
+                                by <a href="https://twitter.com/wjbuere" target="_blank">Wendy Bruere</a>.
+                            </li>
+                            <li>
+                                <a href="http://www.flickr.com/photos/kurdishstruggle/15286693550/in/photolist-phQipU-qx4Zxv-fDRaRG-ptX28u-siKNam-pxztKV-sbB12C-pz7Ct4-qRQv5v-sdo6HC-r71vij-q1UbSP-q28KzN-qYB1Cx-q1VfP7-pXAygT-pbHA3d-r7FQUD-ri1QLG-rs7zMU-rkGvNp-vUZcpP-ehaC29-s5dhS3-upqgd5-s3R4Jm-tGKPXK-r45pS5-pLG7XG-ro8cuW-rohccs-vfBMK3-ryzT2n-rddcgm-qZKq1d-s3q325-rfS9Q9-pFB1Eb-pDUKHG-qsmmpn-nyU2ud-rG9fyf-nyAa6t-rmR8Xw-rxsccX-nyTZPE-rpUtxQ-r7D3Aw-rZtWvr-qZ1LV5" target="_blank">Kurdish YPG Fighter</a>
+                                by <a href="https://www.flickr.com/photos/kurdishstruggle/" target="_blank">Kurdishstruggle</a>
+                                is licensed under <a href="http://creativecommons.org/licenses/by/2.0/" target="_blank">CC BY 2.0</a>.
+                            </li>
+                            <li>
+                                <a href="https://www.flickr.com/photos/p_marione/21845885730/in/photolist-7tNc-jCdNf-d6Pbfh-4Zfnau-bEqLDn-5kgjwD-oMyS8L-B4B6FF-bEqLCZ-LMuf2-AEBhjY-zhrSJf-x9taon-BzPsyW-BEvssp-Bb1jsG-AEFsb2-B4BjdK-BCu6fi-eksC16-7tUU3g-9vwMPA-9EDN1W-bWGfmN-7tYPZq-7tYQ8Y-7tYPR3-eRCX9C-e8aRFu-AEB9x5-BsvYYh-APck9Q-BibXeL-yo5YZa-BCekW2-AEBt7E-Aen8ES-ARDU4i-BKrhSV-BjxGf9-BKBgHv-ANgwdb-AN5mkg-AN8RXX-BbXE7k-E9QuLw-efpLK5-tBdEqR-uvLXWu-uxCGco/" target="_blank">Syrian Refugees - Brussels</a>
+                                by <a href="https://www.flickr.com/photos/p_marione/" target="_blank">Patrick Marione</a>
+                                is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/" target="_blank">CC BY-NC-ND 2.0</a>.
+                            </li>
+                            <li>
+                                <a href="http://www.flickr.com/photos/dysturb/2192929654/in/photolist-BBQrZc-EsPTxu-4kMkzY-7LQD3q-7LXpga" target="_blank">Graveyard Playground BW</a>
+                                by <a href="http://www.flickr.com/photos/dysturb/" target="_blank">Thomas Stellmach</a>
+                                is licensed under <a href="http://creativecommons.org/licenses/by-nc/2.0/" target="_blank">CC BY-NC 2.0</a>.
+                            </li>
+                            <li>
+                                <a href="https://www.flickr.com/photos/syriafreedom/12340949833/in/photolist-jNy25f-jNwAr8-j2ZwQZ-8asEV4-6hZFPj-bn1qLq-bLSb2T-eUyuQW-k4aHAm-bz8JZc-bzdTbD-eUyugb-8aYMJK-51sAVJ-LM8uM-bYSSfy-5bPHq9-9Zf7id-j2ZzKX-5pCQrj-pEhai2-5pBsMY-51opRk-eUyvdQ-8b356Y-3mstyk-cpExT9-sJZSog-ayNSpG-j24QZ-98USB8-xWbFUN-yo5YZa-sJZSyM-trHJ4T-sCN3FW-9ZcbNk-qu7NgJ-7Z7eFx-pEg7iY-pWDiPv-5C189-9Zc8VK-9ZcajT-5Bntsb-5BnvXE-ieV9Q-5Bnv89-qKGygd-5BnzrE/" target="_blank">Syrian man carries the body of a victim</a>
+                                by <a href="http://www.flickr.com/photos/syriafreedom/" target="_blank">Freedom House</a>
+                                is licensed under <a href="http://creativecommons.org/licenses/by/2.0/" target="_blank">CC BY 2.0</a>.
+                            </li>
+                            <li>
+                                <a href="https://www.flickr.com/photos/syriafreedom/21203336089/in/photolist-yiED7a-CAZZaG-y7rEAA-yAbuPZ-y5MVBc-ycmb7R-rTwebQ-xwYQ6H-ysVrX5-xwQyih-ycg8rj-yrxsyQ-ycg8gu-yrxskd-zNYZnE-ycg8oy-ytS2CB-xwYQ74-ytS2L2-xwYPTD-ycg8b9-yrxsL3-ytS2Sp-yuA3bH-yuA3eP-yuA2Sr-xs3a85-xH5vgX-BzJqM3-xH5vxP-oqbnwS-AkZPVn-y4A97h-kqPY1b-kqVnx1-doUWMT-efPESH-doV6EG-mFWhw9-onGqzf-ykhAUj-yiR8qw-ykeR5Q-xpj28H-yiRoLm-y4EABp-ymeEHe-y4Ffsp-ymUufi-y4Hee8" target="_blank">A Syrian refugee carrying his child</a>
+                                by <a href="http://www.flickr.com/photos/syriafreedom/" target="_blank">Freedom House</a> (Public Domain).
+                            </li>
+                            <li>
+                                <a href="https://www.flickr.com/photos/worldbank/14344707682/in/photolist-nRAnQf-e88h4M-mC4vPx-dWGdNT-jqCZFp-nRrvja-mC4sxx-jqCZ3F-qfoNXG-rcpKjP-pjDRum-hWj3S8-bEQzGF-j6iNg2-j6jK6y-pd9LmU-mC6akG-mQPFqL-jrUmTm-rcjazS-efj4Pc-fSi5gc-noLzD2-ePe38e-nRrv5c-mC52bg-oVooBQ-jqBFKr-i2oPsA-esBH71-fSi7T6-cMmfEb-oZs62R-rSjknj-p6anng-j6jmsM-rmcYTk-fDvBBk-nPVD9z-mC4sRD-qUX7Ei-rSkvzo-nPVBAK-fBCnJS-jqBFxH-j2sRMu-qkFV5W-rcpTvt-qiti82-fSgutT" target="_blank">Daily life in Zaatari refugee camp in Jordan</a>
+                                by <a href="https://www.flickr.com/photos/worldbank/" target="_blank">The World Bank Photo Collection</a>
+                                is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/" target="_blank">CC BY-NC-ND 2.0</a>.
+                            </li>
+                            <li>
+                                <a href="http://www.flickr.com/photos/syriafreedom/21076290500/in/photolist-oNJezw-owfUom-owgBzi-5GgYeb-5FYKx6-jPb2SV-y7ruSY-yp4zHr-yxS6ML-yno5KJ" target="_blank">Syrian Refugees</a>
+                                by <a href="http://www.flickr.com/photos/syriafreedom/" target="_blank">Freedom House</a> (Public Domain).
+                            </li>
+                            <li>
+                                <a href="https://www.flickr.com/photos/tracyhunter/373153779/in/photolist-yYvBR-bmZ6Nf-bmYRyo-yYvBM-aR2wSH-bmYRyq-bmYRxY-atMkxA-atMkqu-atJCYp-atJEZi-atMkZA-aR2zpM-atJCLi-atMjAs-kvWYo2-yYu51-atJG2B-6zaWJT-atJF7p-yYu57-yYu54-atJDBk-atMjoN-aR2joP-LQiwi-atMmpA-yYvBP-atMmvy-yYzE8-aR1XDc-yYzEa-GWt3Z-MLg9G-atMjRd-aR2BgF-aR2vD2-atMmNj-aR1Zd4-atJEBx-atJEbK-aR248F-bmYRyh-aR2fnM-aR1YLz-aR2cxK-aR21Qc-aR2Ate-aR2y6R-atMmBY/" target="_blank">Refugee Camp</a>
+                                by <a href="https://www.flickr.com/photos/tracyhunter/" target="_blank">Tracy Hunter</a>
+                                is licensed under <a href="http://creativecommons.org/licenses/by/2.0/" target="_blank">CC BY 2.0</a>.
+                            </li>
+                            <li>
+                                <a href="https://www.flickr.com/photos/ihhinsaniyardimvakfi/13535319093/in/photolist-mC53Nz-mC64Uw-mC4w9F-mC69py-mC66kN-mC5196-mC4Z8Z-mC4sxx-mC6akG-mC4vPx-3dMJhR-mC4sRD-d2zFRw-fKC785-mC52bg-mC4uCp-fNM3gz-m9qs6-pYCePY-CssASV-2bNKpX-rRuB2G-oYzXUt-fFXMHw-nAfczv-oT4kjo-aGe9AF-pjTZMi-qJfxmY-d81hd3-5CA4tZ-ot4zdL-fFXMJf-fFXMJA-5CyhQD-fKzgmH-CkaUoP-5CDmG3-5CzAHz-fGX956-oS3vaA-pUzd1R-5CAfRH-5CCk7C-fJsSpY-5CE2KA-rNxSsJ-5CxVev-5CCV49-qsfJAu" target="_blank">Syria, Aleppo</a>
+                                by <a href="https://www.flickr.com/photos/ihhinsaniyardimvakfi/" target="_blank">IHH Humanitarian Relief <Foundation></Foundation></a>
+                                is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/" target="_blank">CC BY-NC-ND 2.0</a>.
+                            </li>
+                            <li>
+                                <a href="https://www.flickr.com/photos/dfid/15278030225/in/photolist-ph4U7e-65C5of-fjfAYG-5YsTZu-95iheT-fFG193-95iqW8-95ikkD-95iaui-95hWQD-95myqS-d8fx5Y-95jtWV-95ivnB-95nh63-95jakk-8z473w-65C5vL-dcgqpK-62ugZc-65xRZw-kTynj-65vPwZ-fvtz1a-jNy6eY-jNy4cm-jNy5wL-d6D4Pb-62tQrZ-i2pYv3-jNwwFn-onghPo-i2puqo-fFpfyP-62yNbs-ddQBnn-jNvRva-rB593a-95mRuj-5iAzr-2froWY-95nFth-m76E32-95m3by-95nEom-95mDJ5-fgjprv-i2nVF8-95mhZ1-jozCNa" target="_blank">Syrian primary school children attending catch-up learning classes in Lebanon</a>
+                                by <a href="https://www.flickr.com/photos/dfid/" target="_blank"> DFID - UK Department for International Development</a>
+                                is licensed under <a href="http://creativecommons.org/licenses/by/2.0/" target="_blank">CC BY 2.0</a>.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-md-3 credits">
+                        <h3>Plugins</h3>
+                        <ul>
+                            <li>
+                                <a href="http://www.crummy.com/software/BeautifulSoup/bs4/doc/" target="_blank">Beautiful Soup</a>
+                                (web scraping)
+                            </li>
+                            <li>
+                                <a href="http://d3js.org/" target="_blank">d3.js</a>
+                                (visualizations)
+                            </li>
+                            <li>
+                                <a href="http://getbootstrap.com/getting-started/" target="_blank">Bootstrap</a>
+                                (webpage layout)
+                            </li>
+                            <li>
+                                <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">Font Awesome</a>
+                                (icons)
+                            </li>
+                            <li>
+                                <a href="https://github.com/NUKnightLab/TimelineJS3" target="_blank">TimelineJS3</a>
+                                by <a href="https://github.com/JoeGermuska" target="_blank">Northwestern University</a>
+                                is licensed under <a href="https://github.com/NUKnightLab/TimelineJS3/blob/master/LICENSE" target="_blank">Mozilla Public License, version 2.0</a> (timeline)
+                            </li>
+                        </ul>
+                        <br/>
+
+                            <h3>Process book</h3>
+                            <a href="data/Process_book_vfinal.pdf" target="_blank">Click here to
+                                download our process book.</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+<!-- </div>-->
+<!-- ..................................................................................... -->
+<!-- JAVASCRIPT LIBRARIES
+<!-- ..................................................................................... -->
+
+<!-- General libraries -->
+<script src="js/library/jquery.min.js"></script>
+<script src="js/library/queue.min.js"></script>
+<script src="js/library/d3.min.js"></script>
+<script src="js/library/colorbrewer.js"></script>
+<script src="js/library/select.js"></script>
+<script src="js/library/plot-transform.js"></script>
+<script src="js/library/bootstrap.min.js"></script>
+<script src="js/library/topojson.min.js"></script>
+
+
+<!-- Own - non-visualization libraries -->
+<script src="js/browseralerts.js"></script>
+<script src="js/scrollingRules.js"></script>
+<script src="js/responsiveDesign.js"></script>
+
+
+<!-- Visualizations-->
+<script src="js/Timeline.js"></script>
+<script src="js/ViolenceMap.js"></script>
+<script src="js/ActorChord.js"></script>
+<script src="js/ActorStacked.js"></script>
+<script src="js/ActionMap.js"></script>
+<script src="js/Casualties.js"></script>
+<script src="js/RefugeeMap.js"></script>
+<script src="js/Timeslide.js"></script>
+<script src="js/RefugeeStacked.js"></script>
+<script src="js/timelineKeyTakeaways.js"></script>
+
+
+<!-- Load data, load visualizations (needs to go after "Visualizations") -->
+<script src="js/main.js"></script>
+
+<!-- Google Analytics -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-77144254-2', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

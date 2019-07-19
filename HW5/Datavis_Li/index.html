@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DataVis Sample by Li</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,400italic,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+<div class="container">
+	<table class="title">
+			<tr>
+				<th>
+					<image src="picture/pic2.png"></image>
+					<h1>FIFA World Cup<sup>TM</sup></h1>
+				</th>
+			</tr>
+		</table>
+		<h2>All Time Statistics</h2>
+
+		<!-- Select box to choose the data type -->
+		<form class="form-inline">
+			<div class="form-group">
+
+				<label for="dataType" class="label-1">Chart Data</label>
+            <select class="form-control" id="data-type" >
+                <option value="GOALS">Goals</option>
+                <option value="AVERAGE_GOALS">Average Goals</option>
+                <option value="MATCHES">Matches</option>
+                <option value="TEAMS">Teams</option>
+                <option value="AVERAGE_ATTENDANCE">Average Attendance</option>
+            </select>
+
+				<label for="dateType" class="label-2">Time Period</label>
+			<select class="form-control" id="date-type1">
+				<option value="1930">1930</option>
+				<option value="1934">1934</option>
+				<option value="1938">1938</option>
+				<option value="1950">1950</option>
+				<option value="1962">1962</option>
+				<option value="1966">1966</option>
+				<option value="1970">1970</option>
+				<option value="1974">1974</option>
+				<option value="1978">1978</option>
+				<option value="1982">1982</option>
+				<option value="1986">1986</option>
+				<option value="1990">1990</option>
+				<option value="1994">1994</option>
+				<option value="1998">1998</option>
+				<option value="2002">2002</option>
+				<option value="2006">2006</option>
+				<option value="2010">2010</option>
+				<option value="2014">2014</option>
+			</select>
+
+			<select class="form-control" id="date-type2">
+				<option value="2014">2014</option>
+				<option value="2010">2010</option>
+				<option value="2006">2006</option>
+				<option value="2002">2002</option>
+				<option value="1998">1998</option>
+				<option value="1994">1994</option>
+				<option value="1990">1990</option>
+				<option value="1986">1986</option>
+				<option value="1982">1982</option>
+				<option value="1978">1978</option>
+				<option value="1974">1974</option>
+				<option value="1970">1970</option>
+				<option value="1966">1966</option>
+				<option value="1962">1962</option>
+				<option value="1950">1950</option>
+				<option value="1938">1938</option>
+				<option value="1934">1934</option>
+				<option value="1930">1930</option>
+
+			</select>
+			</div>
+
+				<button type="button" class="btn btn-link" id="filter">Update</button>
+
+		</form>
+
+		<!-- Parent container for the visualization -->
+		<div class="row">
+			<div class="col-xs-12 col-md-7">
+				<div id="chart-area"></div>
+			</div>
+
+			<div class="col-xs-6 col-md-5">
+				<h3 id="content-0"></h3>
+				<table class="centered-table" id="t01">
+					<tbody>
+						<tr>
+							<td class="col-1">Winner</td>
+							<td class="col-2" id="content-1"></td>
+						</tr>
+						<tr>
+							<td class="col-1">Goals</td>
+							<td class="col-2" id="content-2"></td>
+						</tr>
+						<tr>
+							<td class="col-1">Average Goals</td>
+							<td class="col-2" id="content-3"></td>
+						</tr>
+						<tr>
+							<td class="col-1">Matches</td>
+							<td class="col-2" id="content-4"></td>
+						</tr>
+						<tr>
+							<td class="col-1">Terms</td>
+							<td class="col-2" id="content-5"></td>
+						</tr>
+						<tr>
+							<td class="col-1">Average Attendance</td>
+							<td class="col-2" id="content-6"></td>
+						</tr>
+						<tr>
+							<td class="col-1">Location</td>
+							<td class="col-2" id="content-7"></td>
+						</tr>
+					</tbody>
+				</table></div>
+		</div>
+	</div>
+
+	<!-- Load JS libraries: jQuery, bootstrap, D3, D3 tooltip -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/d3.min.js"></script>
+	<script src="js/d3.tip.js"></script>
+
+	<!-- Own implementation -->
+	<script src="js/main.js"></script>
+</body>
+</html>

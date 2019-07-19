@@ -1,0 +1,1419 @@
+/* Data-Viz CSS STYLES */
+
+/***********/
+/*  Fonts   */
+/******** **/
+
+body { font-family: 'Raleway', sans-serif;
+    font-size: 1.6em; }
+.title-name {font-size: 5em; text-align: center; font-weight: 100;}
+.subtitle-name {font-size: 2.5em; text-align: center; font-weight: 100;}
+.title-numbers {font-size: 3.5em;}
+.title-numbers-name {font-size: 2em; font-weight: 300;}
+h1 {font-size: 3.5em;}
+h2{font-size: 1.7em;}
+
+.fact:hover  {
+    color: #f9d6cf;
+}
+
+.fixing {
+    opacity: 0;
+}
+
+@media all and (max-width: 70em){
+    body{font-size: 1.4em;}
+}
+
+
+mark {font-family: 'Raleway', sans-serif;
+    font-size: 1.1em;
+    padding: 0em;
+    background-color:  black;
+    color: #D70202;
+}
+
+body.noscroll
+{
+    position: fixed;
+    overflow-y: scroll;
+    width: 100%;
+    cursor: wait;
+}
+
+
+
+
+/*************/
+/*    FORM   */
+/*************/
+
+.blackbackground {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+    background-size: 100% auto;
+    width: 100%;
+    padding: 10px 20px 20px 20px;
+}
+
+.blackbackgroundsoft {
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
+    background-size: 100% auto;
+    padding: 10px 20px 20px 20px;
+}
+
+.height360{
+    height: 360px;
+}
+
+.container{padding: 0px;}
+.row{padding: 0px;}
+
+.upbutton{
+    font-size: 2.3em;
+    z-index: 100;
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    -ms-transform: translateX(-70px) translateY(60px);
+    -webkit-transform: translateX(-70px) translateY(60px);
+    -moz-transform: translateX(-70px) translateY(60px);
+    -o-transform: translateX(-70px) translateY(60px);
+    transform: translateX(-70px) translateY(60px);
+}
+
+.downbutton{
+    font-size: 2.3em;
+    z-index: 100;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    -ms-transform: translateX(-70px) translateY(-50px);
+    -webkit-transform: translateX(-70px) translateY(-50px);
+    -moz-transform: translateX(-70px) translateY(-50px);
+    -o-transform: translateX(-70px) translateY(-50px);
+    transform: translateX(-70px) translateY(-50px);
+}
+
+@media all and (max-width: 66em){
+    .upbutton{
+        font-size: 2.3em;
+        z-index: 100;
+        position: absolute;
+        top: 0%;
+        left: 100%;
+        -ms-transform: translateX(-40px) translateY(60px);
+        -webkit-transform: translateX(-40px) translateY(60px);
+        -moz-transform: translateX(-40px) translateY(60px);
+        -o-transform: translateX(-40px) translateY(60px);
+        transform: translateX(-40px) translateY(60px);
+    }
+    .downbutton{
+        font-size: 2.3em;
+        z-index: 100;
+        position: absolute;
+        top: 100%;
+        left: 100%;
+        -ms-transform: translateX(-40px) translateY(-50px);
+        -webkit-transform: translateX(-40px) translateY(-50px);
+        -moz-transform: translateX(-40px) translateY(-50px);
+        -o-transform: translateX(-40px) translateY(-50px);
+        transform: translateX(-40px) translateY(-50px);
+    }
+}
+
+.upbutton:hover,
+.downbutton:hover{
+    cursor: pointer;
+}
+
+
+.container .jumbotron {
+    padding-right: 0px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: rgba(0, 0, 0, 0);
+}
+
+.vertical{
+    vertical-align: middle;
+}
+
+.whitelink{
+    color: white;
+}
+
+
+.col-md-8{
+    margin: 0px;
+}
+
+.section {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 50px;
+    /*padding-top: 50px;
+    padding-bottom: 25px;*/
+}
+
+
+.containervertical{
+    /*
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);*/
+
+    position: absolute;
+    top: 50%;
+
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 90%;
+    margin-right: auto; margin-left: auto;
+}
+
+.containerbottom{
+    z-index: 100;
+    font-size: 0.65em;
+    position: absolute;
+    top: 100%;
+    -ms-transform: translateY(-35px);
+    -webkit-transform: translateY(-35px);
+    -moz-transform: translateY(-35px);
+    -o-transform: translateY(-35px);
+    width: 90%;
+    margin-right: auto; margin-left: auto;
+}
+
+.vm_button,
+.am_button_fix,
+.cp_button_fix,
+.vm_play{
+     background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.4) 100%);
+     box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+     width: 140px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9em;
+    color: black;
+ }
+
+.am_button_fix,
+.cp_button_fix,
+.ca_button{
+    border-radius: 5px;
+    margin: 5px 0px 0px 0px;
+    width: 200px;
+}
+
+.am_button_fix{
+    width:240px;
+}
+
+.am_button,
+.cp_button{
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.4) 100%);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+    width: 140px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9em;
+    color: black;
+    /*padding: 2px 10px 1px 10px;*/
+}
+
+.vm_play{
+    padding: 2px 4px 2px 4px;
+    margin: 2px;
+    text-align: left;
+    width: 120px;
+    font-size: 0.75em;
+}
+
+.cp_play {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.4) 100%);
+    box-shadow: none;
+    padding: 1px 5px 1px 5px;
+    margin: 2px;
+    text-align: center;
+    width: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9em;
+    color: black;
+}
+
+
+.vm_button.selected,
+.am_button.selected,
+.cp_play.selected,
+.vm_play.playselected{
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.8) 100%);
+    /*margin: 0 auto;
+    padding: 0px;
+    text-align: center;*/
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+    /*display: inline-block;*/
+    color: #ff0000;
+    outline: none;
+}
+
+.am_button_fix.selected,
+.ca_button_fix.selected,
+.cp_button_fix.selected {
+    border-radius: 5px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.8) 100%);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+    color: red;
+    outline: none;
+    text-align: center;
+}
+
+
+
+
+.btn:focus,
+.btn:active{
+    outline:none !important;
+    box-shadow:none !important;
+}
+
+@media all and (max-width: 1300px) {
+    .vm_button,
+    .ca_button,
+    .cp_button{
+        padding: 2px;
+        width: 120px;
+        font-size: 0.85em;
+    }
+
+    .ca_button{
+        width: 150px;
+    }
+}
+
+@media all and (max-width: 1100px) {
+    .vm_button,
+    .ca_button,
+    .cp_button{
+        padding: 2px;
+        width: 100px;
+        font-size: 0.8em;
+    }
+
+    .ca_button{
+        width: 150px;
+    }
+}
+
+/**************/
+/*   Map     */
+/*************/
+
+.graticule {
+    fill: none;
+    stroke: #777;
+    stroke-opacity: .5;
+    stroke-width: .5px;
+}
+
+.land {
+    fill: #BC8F8F;
+}
+
+.boundary {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 1.5px;
+}
+
+
+/* THIS IS IMPORTANT SUCH THAT THE LEGEND FOR X-AXIS SHOWS UP */
+.axis path,
+.axis line{
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+/* Text in axis */
+.axis .tick{
+    fill: white;
+    font-size: 0.8em;
+}
+
+.legend{
+    /*fill: white;*/
+    font-size: 0.9em;
+}
+
+
+
+.axis path,
+.axis line{
+    fill: none;
+    stroke: white;
+}
+
+.background {
+    fill: none;
+    pointer-events: all;
+}
+
+/**************/
+/*  ToolTip   */
+/**************/
+/*
+.tooltip-header{
+    color: black;
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+*/
+
+/**************/
+/*  LOAD   */
+/**************/
+
+@keyframes pulse_animation {
+    0% { transform: scale(1); }
+    30% { transform: scale(1); }
+    40% { transform: scale(1.01); }
+    50% { transform: scale(1); }
+    60% { transform: scale(1); }
+    70% { transform: scale(1.01); }
+    80% { transform: scale(1); }
+    100% { transform: scale(1); }
+}
+.pulse {
+    animation-name: pulse_animation;
+    animation-duration: 5000ms;
+    transform-origin:70% 70%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/* ----------------------------------------------------------------------------------------------
+// Navigation bar
+----------------------------------------------------------------------------------------------*/
+
+/* NAVBAR <-- adapted from "Behind Bars"*/
+#navbar { font-family: 'Raleway', sans-serif; font-size: 0.8em; }
+#navbar.navbar-default { background-color: #000; }
+#navbar a { color: #ccc; }
+#navbar a:hover { color: #D70202; text-decoration: none; }
+#navbar .navbar-header { margin: 10px 0 0 25px; }
+#navbar .navbar-header a { color: white; font-weight: 100; font-size: 20px; }
+#navbar .navbar-header a:hover { color: #D70202;}
+#navbar .navbar-header a:focus { text-decoration: none; }
+#navbar .nav { margin: 0 0 0 25px; }
+/*#navbar .navbar-nav .navselect a {color: #D70202; }*/
+
+@media all and (max-width: 72em){
+    #navbar .navbar-header a { color: white; font-weight: 100; font-size: 15px; }
+    #navbar .navbar-header { margin: 10px 0 0 25px; }
+    /*#navbar{font-size: 0.7em;}*/
+    #navbar .navbar-header { margin: 15px 0 0 8px; }
+    #navbar .nav { margin: 0 0 0 8px; }
+    /*h2{font-size: 1.2em;}*/
+}
+
+
+.noBackground {
+    background-color: none;
+}
+
+.blackBackground {
+    background: black;
+}
+
+/* ----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+// Styling of individual sections
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------------------------------------
+// Intro
+----------------------------------------------------------------------------------------------*/
+/* Background images */
+#introSection {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('../img/children.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+}
+
+
+/* ----------------------------------------------------------------------------------------------
+// Intro
+----------------------------------------------------------------------------------------------*/
+
+#screencast{
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+}
+
+/* ----------------------------------------------------------------------------------------------
+// Violencemap
+----------------------------------------------------------------------------------------------*/
+#violenceMapSection {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('../img/violenceinthestreets.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+}
+#violencemap .land,
+#timeline .baselinearea,
+#timeline .timelineoverlay{  opacity: 0.6;  }
+#violencemap .land:hover{  opacity: 0.9;  }
+#violencemap .counter,
+.counter{font-size: 30px;  fill: white; color: red;}
+#violencemap .littlepeople{font-size: 29px;}
+#violencemap .place-label,
+#violencemap .place{fill: white; font-size: 0.8em;}
+#timeline .tick text{font-size: 1em;}
+.vmtooltip{
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8em;
+    position: absolute;
+    text-align: left;
+    vertical-align: middle;
+    display: inline;
+    padding: 6px 10px 0px 10px;
+    background-color: #D1D1D1;
+    border: 0px;
+    border-radius: 2px;
+    pointer-events: none;
+    color: #4F4F4F;
+    line-height: 100%;
+}
+.vmtooltip .tooltip-header{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+        color: #4F4F4F;
+}
+/*Pointer events*/
+/*#violenceMapSection .fa-4x,
+#violenceMapSection .fa-2x{ color: lightgrey;}*/
+
+#violenceMapSection .fa-stack{ color: lightgrey;}
+#violenceMapSection .fa-inverse{ color: black;}
+#violenceMapSection .playselected{ color: red;}
+
+#violencemapSection span{
+    padding: 0px;
+    margin: 0px;
+}
+
+#violenceMapSection rect.handle{fill:white;}
+
+.legend_actor_circle:hover,
+.legend_violence_circle:hover,
+#playviolence:hover,
+.textlegend1:hover,
+.textlegend2:hover,
+.handle:hover{  cursor:pointer;  }
+
+#violenceMapSection .legendtable td{
+    height: 20px;
+    vertical-align: middle;
+    padding: 8px;
+    font-size: 0.85em;
+}
+
+#violenceMapSection table{
+    max-width: 420px;
+}
+
+@media all and (max-width: 1300px){
+    #violenceMapSection table{max-width: 360px;}
+    #violenceMapSection text.legend{font-size: 0.75em;}
+}
+
+@media all and (max-width: 1100px){
+    #violenceMapSection table{max-width: 300px;}
+    #violenceMapSection text.legend{font-size: 0.7em;}
+}
+
+#infotext,
+#infotext2{
+    font-size: 1.1em;
+}
+
+#countercell{font-size: 2em;}
+
+
+/* Style of calendar based on http://www.sitepoint.com/create-calendar-icon-html5-css3/ */
+
+#calendar{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+time.icon
+{
+    font-size: 0.7em; /* change icon size */
+    display: block;
+    position: relative;
+    width: 7em;
+    height: 7em;
+    background-color: #fff;
+    margin: 2em auto;
+    border-radius: 0.6em;
+    box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: rotate(0deg) skewY(0deg);
+    -webkit-transform-origin: 50% 10%;
+    transform-origin: 50% 10%;
+}
+
+time.icon *
+{
+    display: block;
+    width: 100%;
+    font-size: 1em;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+}
+
+time.icon strong
+{
+    position: absolute;
+    top: 0;
+    padding: 0.4em 0;
+    color: #fff;
+    background-color: red;
+    border-bottom: 1px dashed white;
+    box-shadow: 0 2px 0 red;
+}
+
+time.icon em
+{
+    position: absolute;
+    bottom: 0.3em;
+    color: red;
+    /*color: #fd9f1b;*/
+}
+
+time.icon span
+{
+    width: 100%;
+    font-size: 2.8em;
+    letter-spacing: -0.05em;
+    padding-top: 0.8em;
+    color: #2f2f2f;
+}
+
+
+
+/* ----------------------------------------------------------------------------------------------
+// Actionmap
+----------------------------------------------------------------------------------------------*/
+#actionMapSection {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('../img/refugeestraveling.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+
+    position: relative;
+    color: white;
+}
+
+#actionmap .landshow {
+    cursor: pointer;
+}
+
+#actionmap .landtransparent{  opacity: 0.5;  }
+
+#actionmap .axis{
+    background: linear-gradient(rgba(1, 1, 1, 0.4), rgba(1, 1, 1, 0.4));
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#actionMapSection .caption{
+    fill: white;
+}
+
+#actionMapSection .jumbotron.vertical-center {
+    margin-bottom: 0; /* Remove the default bottom margin of .jumbotron */
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+#actionMapSection div.vertical-center {
+    height: 500px;
+
+    /* Make it a flex container */
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    /* Align the bootstrap's container vertically */
+    -webkit-box-align : center;
+    -webkit-align-items : center;
+    -moz-box-align : center;
+    -ms-flex-align : center;
+    align-items : center;}
+
+
+.am_textbox{
+    -moz-border-radius:30px;
+    -webkit-border-radius:30px;
+    padding: 20px;
+    border-radius:30px;
+    /*border: solid 10px #000;*/
+    background-color: rgba(105,100,100,0.8);
+    width:80%;
+    margin-left: auto ;
+    margin-right: auto ;
+}
+
+/* ----------------------------------------------------------------------------------------------
+// RefugeeCampMap
+----------------------------------------------------------------------------------------------*/
+#campSection {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('../img/camp3.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+}
+
+#campSection .land {  opacity: 0.6;  }
+
+#campSection .land:hover{
+    opacity: 0.9;  }
+#campSection .axis{  background: linear-gradient(rgba(1, 1, 1, 0.4), rgba(1, 1, 1, 0.4));  }
+
+#campSection .caption{
+    fill: white;
+}
+#campSection .jumbotron.vertical-center {
+    margin-bottom: 0; /* Remove the default bottom margin of .jumbotron */
+}
+#campSection .container .jumbotron {
+    padding-left: 15px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-top:0px;
+}
+#campSection div.vertical-center {
+    height: 80px;
+    /* Make it a flex container */
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    /* Align the bootstrap's container vertically */
+    -webkit-box-align : center;
+    -webkit-align-items : center;
+    -moz-box-align : center;
+    -ms-flex-align : center;
+    align-items : center;
+}
+#campSection div.col-xs-11 {
+    padding-right: 0px;
+}
+
+#refugeemap .axis path,
+#refugeemap .axis line {
+    fill: white;
+}
+
+#refugeemap .legend .legend-circle {
+    fill: none;
+    stroke-width: 2px;
+    stroke: white;
+}
+
+#refugeemap .legend .legend-text {
+    fill: white;
+}
+
+#refugeemap .beginbubbles,
+#refugeemap .bubbles,
+#legendstack,
+#refugeestacked .area {
+    cursor: pointer;
+}
+
+#refugeemap .beginbubbles:hover,
+#refugeemap .bubbles:hover {
+    opacity:1;
+}
+
+#camptooltip {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    position: absolute;
+    text-align: left;
+    vertical-align: middle;
+    display: inline;
+    padding: 5px 5px 5px 5px;
+    background-color: #D1D1D1;
+    border: 0px;
+    border-radius: 2px;
+    pointer-events: none;
+    color: #4F4F4F;
+    line-height: 100%;
+}
+
+#timesline .timeslidehandle text {
+    fill: white;
+    font-size: 15px;
+}
+
+#timeslide .timeslidehandle rect {
+    fill:red;
+    stroke: red;
+    stroke-width: 3px;
+    stroke-linecap: round;
+    cursor: pointer;
+}
+
+#timeslide .axis path{
+    fill: #fff;
+    opacity: 0.5;
+}
+
+#timeslide .axis line{
+    fill: none;
+    stroke: red;
+    stroke-width: 5px;
+}
+
+#timeslide .axis text{
+    fill: #fff;
+    font-size: 15px;
+}
+
+#refugeestacked .axis path,
+#refugeestacked .axis line {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 1px;
+    shape-rendering: crispEdges;
+}
+
+#refugeestacked #category3 text {
+    background: darkgray;
+}
+
+/* ----------------------------------------------------------------------------------------------
+// ActorChord
+----------------------------------------------------------------------------------------------*/
+#actorChordSection {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.42)),url('../img/soldier.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    overflow: visible; !important
+}
+
+#actorChordSection .landtransparent{
+    opacity: 0.5;
+    overflow: visible; !important
+
+}
+
+#actorChordSection .axis{
+    background: linear-gradient(rgba(1, 1, 1, 0.4), rgba(1, 1, 1, 0.4));
+}
+
+#actorChordSection svg:not(:root) {
+    overflow: inherit; !important
+}
+
+#actorChordSection .titles {
+    font-size: 12px;
+    color: white;
+}
+
+#actorChordSection .tickLabels {
+    font-size: 12px;
+    color: white;
+}
+
+#actorChordSection .ticks {
+    font-size: 12px;
+    color: white;
+}
+
+#skip{
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+}
+
+#reset{
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+}
+#progress {
+    z-index: 1;
+    display: block;
+    position: relative;
+    width: 40%;
+    height: 6px;
+    margin: 10px auto;
+    visibility: hidden;
+}
+
+#buttonWrapper{
+    z-index: 1;
+    display: block;
+    display: block;
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    color: #FFF; !important;
+    position: relative;
+    width: 640px;
+    text-align: center;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+#buttonWrapperInner{
+    position: relative;
+    width: 300px;
+    height: 20px;
+    margin: 0 auto;
+    color: #FFF; !important;
+}
+#actorChordSection path.chord {
+    fill-opacity: .80;
+}
+#actorChordSection line {
+    stroke: #fff; !important;
+    stroke-width: 1px;
+}
+
+#actorChordSection text {
+    font-size: 14px;
+    color: white;
+}
+
+#clickerWrapper {
+    top: 0;
+    z-index: 1;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 640px;
+    /*visibility: auto;*/
+}
+
+#clicker,
+.clicker{
+    z-index: 1;
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    color: #FFFFFF;
+    position: relative;
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+    border: 1px solid;
+    border-color: #FFFFFF; !important;
+    cursor: pointer;
+}
+
+
+/* ----------------------------------------------------------------------------------------------
+// ActorStacked
+----------------------------------------------------------------------------------------------*/
+.selector {
+    color: #000000;
+}
+
+.legendActorChord {
+    color: #fff;
+    overflow: visible; !important
+
+}
+
+#visStacked {
+    margin-top: 45px;
+    margin-bottom: 45px;
+    overflow: visible; !important
+    /*position: relative;*/
+}
+
+.tdActorChord {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+/* ----------------------------------------------------------------------------------------------
+// CASUALTIES: Who are the victims?
+----------------------------------------------------------------------------------------------*/
+#casualtySection{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('../img/casualties.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+}
+
+
+.ca_tooltip {
+    /*position:absolute;*/
+    text-align: left;
+    width: 220px;
+    height:auto;
+    background-color: #EDE3D1;
+    border-radius: 10px;
+    color: #787777;
+    padding: 6px 12px;
+    /*z-index:3;*/
+}
+
+.ca_tooltip td{
+    padding: 1px 2px 1px 0px;
+}
+
+.ca_tooltip span {
+    display: block;
+    text-align: center;
+    width: 220px;
+    height: auto;
+    margin: 5px auto;
+}
+
+/*
+span {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}*/
+
+.narratives{
+    fill: white;
+    font-size: 1.8em;
+    background: white;
+}
+
+
+/*
+.narratives1{
+    font-size: 1.5em;
+}*/
+
+.deathcauseaxis,
+.legendtext,
+.ca_labels{
+    fill: white;
+}
+
+.deathcauselabels,
+.ca_labels{
+    font-size: 1.4em;
+}
+
+@media all and (max-width: 1300px){
+    .narratives{font-size: 1.6em;}
+    .deathcauselabels{font-size: 1.3em;}
+}
+
+
+#progressbuttons{
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    cursor: pointer;
+}
+
+.clicker2{
+    width: 100px;
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid;
+    border-color: #FFFFFF; !important;
+    cursor: pointer;
+}
+
+.clicker3{
+    width: 100px;
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid;
+    border-color: #FFFFFF; !important;
+    cursor: pointer;
+    -ms-transform: translateY(1.7em);
+    -webkit-transform: translateY(1.7em);
+    -moz-transform: translateY(1.7em);
+    -o-transform: translateY(1.7em);
+    transform: translateY(1.7em);
+}
+
+#ca_startover.lower{
+    top: 85%;
+}
+
+#casualtySection div.col-md-2 {
+    padding-left:0px;
+}
+
+
+
+/* ----------------------------------------------------------------------------------------------
+// About US - Team pics
+----------------------------------------------------------------------------------------------*/
+#aboutSection{
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+}
+
+.circular {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border: solid 1px white;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    /*background: url('../img/refugeestraveling.png');*/
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+
+    position: relative;
+    left: 50%;
+
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.circularMar{
+    background: url('../img/Mar1.png');
+    background-repeat: no-repeat;
+    background-size: 105% auto;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+.circularLil{
+    background: url('../img/Lil1.png');
+    background-repeat: no-repeat;
+    background-size: 105% auto;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+.circularMaria{
+    background: url('../img/Maria1.png');
+    background-repeat: no-repeat;
+    background-size: 110% auto;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+.circularMar:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+.circularLil:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+.circularMaria:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+/* ----------------------------------------------------------------------------------------------
+// Key Takeaways Timeline
+----------------------------------------------------------------------------------------------*/
+#keyTakeawaysSection {
+    background: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)),url('../img/destructionAleppo.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white; !important
+overflow: visible; !important
+
+}
+
+#keyTakeawaysSection .landtransparent{
+    color: white;
+}
+
+.tl-timeline {
+    height:550px;
+    width:95%;
+    padding: 0px;
+    margin: 0px;
+    opacity: 0.8;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+}
+
+#keyTakeawaysSection p{
+    color: white;
+}
+
+#keyTakeawaysSection h1{
+    color: white;
+}
+#keyTakeawaysSection h2{
+    color: white;
+}
+#keyTakeawaysSection h3{
+    color: lightgray;
+}
+#keyTakeawaysSection h4{
+    color: white;
+}
+#keyTakeawaysSection h5{
+    color: white;
+}
+#keyTakeawaysSection h6{
+    color: white;
+}
+
+.tl-slider-item-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)); !important;
+}
+
+.tl-slider-background {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)); !important;
+}
+
+
+.tl-slider-container-mask {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)); !important;
+}
+
+
+.tl-timenav {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)); !important;
+    color: white;
+}
+
+.tl-timenav-slider-background {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)); !important;
+}
+
+.tl-timeaxis-background {
+    background-color: rgba(0,0,0,0.9);
+    color: white; !important;
+}
+
+.tl-timeaxis-major .tl-timeaxis-tick:before {
+    color: white;
+}
+
+.tl-timeaxis {
+    color: white; !important;
+    opacity: 1;
+}
+
+.tl-timemarker-content-container {
+    color: white; !important;
+}
+
+.tl-timemarker {
+    color: white; !important;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.tl-timemarker-active {
+    color: white; !important;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.tl-timemarker-text {
+    color: black; !important;
+}
+
+.tl-timemarker-container {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.tl-text-content-container{
+    width: 400px;!important;
+}
+
+.tl-slide-content-container {
+    width: 100%;
+}
+
+.tl-slide-content {
+    width: 1200px;
+    padding-right: 0px;
+}
+
+.tl-timeaxis-tick-text {
+    color: white;!important;
+    opacity: 1; !important;
+}
+
+/* ----------------------------------------------------------------------------------------------
+// Credits
+----------------------------------------------------------------------------------------------*/
+
+#creditsSection{
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    font-size: 0.85em;
+}
+
+@media all and (max-width: 1300px){
+    #creditsSection h1{font-size: 2.5em;}
+    #creditsSection h3{font-size: 1.4em;}
+    #creditsSection{font-size: 1.0em;}
+}
+
+.credits{
+    font-size: 0.8em;
+    padding: 0px 25px 0px 25px;
+}
+.creditsmiddle{
+    font-size: 0.8em;
+    padding: 0px 25px 0px 25px;
+    border-right-color: white;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-left-color: white;
+    border-left-width: 1px;
+    border-left-style: solid;
+}
+
+/* ----------------------------------------------------------------------------------------------
+// Quotes
+----------------------------------------------------------------------------------------------*/
+
+.quotesSections {
+    width: 600px;
+    color: white;
+    margin: 10% auto;
+    left: 0;
+    right: 0;
+}
+
+.quote {
+    text-align: justify;
+    font-size: 26px;
+}
+
+.quoteAuthor{
+    text-align: right;
+    color: white;
+}
+
+#quotesSection1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('../img/quote1.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+}
+
+#quotesSection2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('../img/quote2.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+}
+
+#quotesSection3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('../img/quote3.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+}
+
+#quotesSection4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('../img/quote4.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+}
+
+#quotesSection5 {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('../img/quote5.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+}
+
+#quotesSection6 {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('../img/quote6.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+}
+

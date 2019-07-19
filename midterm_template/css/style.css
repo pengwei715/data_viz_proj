@@ -1,0 +1,172 @@
+
+/* YOUR CSS STYLES */
+
+/****************/
+/*  BODY        */
+/****************/
+body{
+    font-family: "nyt-cheltenham",georgia,"times new roman",times,serif;
+    margin: 10px;
+    padding: 50px 50px;
+    background-color: mintcream;
+}
+
+.g-head-wrap {
+    text-align: center;
+    margin: 0;
+    max-height: 600px;
+    width: 100%;
+    padding: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    position: relative;
+    z-index: 10;
+}
+
+h1.g-headline {
+    font-weight: 200;
+    font-size: 39px;
+    line-height: 1.15;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    margin-bottom: 7px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    max-width: 620px;
+    margin: 0 auto 12px auto;
+}
+
+h2.s-headline {
+    font-weight: 200;
+    font-size: 40px;
+    line-height: 1.15;
+    text-shadow: 1px 1px 1px #000;
+    color: #fff;
+    margin-bottom: 7px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    max-width: 620px;
+    margin: 0 auto 12px auto;
+}
+
+.g-byline {
+    font-size: 16px;
+    font-family: 'nyt-franklin', arial, sans-serif;
+    line-height: 1.4em;
+    color: #fff;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    opacity: 1;
+    border-top: 1px solid #ccc;
+    display: inline-block;
+    padding: 12px 30px 5px;
+    margin-bottom: 0;
+    text-shadow: 1px 1px 1px #000;
+}
+
+p {
+    line-height: 1.6em;
+    font-size: 16px;
+}
+
+
+.user-tools {
+    text-align: right;
+    padding-right:30px;
+    cursor: pointer;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+}
+
+/*************/
+/*    FORM   */
+/*************/
+.btn-group {
+    margin-left:80px;
+    margin-top:15px;
+}
+
+/**************/
+/*  ToolTip   */
+/**************/
+div.tooltip {
+    position: absolute;
+    text-align: left;
+    display: inline;
+    padding: 6px;
+    font: 13px sans-serif;
+    background-color: #000;
+    border: 0px;
+    border-radius: 2px;
+    pointer-events: none;
+    color: #fff;
+
+}
+.key path {
+    display: none;
+}
+
+.key line {
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+/**************/
+/*   Map     */
+/*************/
+.caption {
+    font-size: 20px;
+}
+
+.mapTopJson {
+    cursor: pointer;
+}
+/**************/
+/*   Tree    */
+/*************/
+.node {
+    cursor: pointer;
+}
+
+.node circle {
+    fill: #fff;
+    stroke: #458B00;
+    stroke-width: 2px;
+}
+
+.node text {
+    font: 20px "nyt-cheltenham",georgia,"times new roman",times,serif;
+}
+
+.link {
+    fill: none;
+    stroke: #7CFC00;
+    stroke-width: 1.8px;
+}
+
+#tree-area {
+ margin-left:18px;
+}
+/**************/
+/* CAROUSEL  */
+/*************/
+
+.carousel {
+    width:90%;
+    height:90%;
+    margin:0 auto; /* center your carousel if other than 100% */
+}
+
+.carousel-inner {
+    width:100%;
+    height:auto;
+}
+
+.carousel-inner div, .carousel-inner img {
+    width:100%;
+    height:auto;
+    text-align:center;
+    margin:0 auto; }

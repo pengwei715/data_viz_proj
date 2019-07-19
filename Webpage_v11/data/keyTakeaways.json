@@ -1,0 +1,310 @@
+{
+    "scale": "human",
+    "title": {
+        "media": {
+            "caption": "",
+            "credit": "",
+            "url": "data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgMjIuMDQ4IDIyLjA0OCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjIuMDQ4IDIyLjA0ODsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxwYXRoIGQ9Ik0wLjM5NiwxMC4zNjljLTAuMDMzLDAuNzA1LTAuMDMsMS40NzMsMS4wOTYsMS4zOGMwLjU3NS0wLjA0NCwwLjgyMiwwLjU0NCwxLjA1LDAuOTQ5ICAgYzAuMjY2LDAuNDczLTAuMTk2LDAuNy0wLjU0MiwwLjkyNmMtMS4yNzYsMC44MzItMi4xMTQsMS44OC0xLjU5NiwzLjQ4Yy0wLjEwMywwLjI0Mi0wLjIxMiwwLjQyMi0wLjI0NywwLjYxOCAgIGMtMC4wMzksMC4yMTMsMC4xMzcsMC4zMjUsMC4yOCwwLjQ4YzEuMDk2LDEuMTgzLDIuNjY2LDEuNDM4LDQuMTI3LDAuNjc3YzMuNzg4LTEuOTcyLDcuNTMzLTQuMDM1LDExLjQwNi01LjgyNCAgIGMxLjYwNi0wLjc0MiwyLjUzMS0xLjU1NCwyLjMxNi0zLjM2MmMtMC4wMTQtMC4xLDAuMDAyLTAuMjA3LDAuMDIxLTAuMzA1YzAuMjA2LTAuOTkyLDIuMjM5LTQuNDM3LDMuMDYxLTUuMTg0ICAgYzAuMzc1LTAuMzM3LDAuOTM4LTAuNjczLDAuNTQ3LTEuMjRjLTAuMzYzLTAuNTI2LTAuODExLDAuMDA3LTEuMjI3LDAuMTA4Yy0wLjU5MywwLjE0NS0xLjIyMSwwLjM5OC0xLjc5NiwwLjMyICAgYy0xLjc5Ny0wLjIzOC0zLjM5MiwwLjMtNS4wMzEsMC45MThjLTEuMzQxLDAuNTAyLTIuODM4LDAuNzExLTQuMTgxLDAuMTE0QzguNzQsNC4wMDksNy45NTQsNC4wMTEsNy4wNTQsNC4zNSAgIEM2LjAwNSw0Ljc0Myw0Ljk2OSw1LjA1NywzLjgzNiw0LjQ0OUMzLjE0NSw0LjA4MSwyLjY0Nyw0LjQ3MSwyLjYxNyw1LjI3NmMtMC4wNDgsMS4yNDctMC42ODYsMS45MjYtMS45MSwyLjExICAgQy0wLjA2OCw3LjUwMy0wLjExLDguMjI0LDAuMTI4LDguNjIyQzAuNDgzLDkuMjIyLDAuNDI2LDkuNzUyLDAuMzk2LDEwLjM2OXoiIGZpbGw9IiNmZjAwMDAiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K",
+            "thumb": 	""
+        },
+        "text": {
+            "headline": "Visualizing the Conflict in Syria",
+            "text": "<p>This is how data connects to the events throughout the conflict.</p>"
+        }
+    },
+    "events": [
+        {
+            "start_date": {
+                "year":			"2011",
+                "month":		"3",
+                "day": 			"",
+                "hour": 		"",
+                "minute": 		"",
+                "second": 		"",
+                "millisecond": 	"",
+                "format": 		""
+            },
+            "group": "Time",
+            "media": {
+                "caption": "Screencast from 'How is violence spreading?'",
+                "credit": "",
+                "url": "https://youtu.be/gUyeQocsYPg",
+                "thumb": 	""
+            },
+            "text": {
+                "headline": "Violence triggered in Deraa",
+                "text": "Unrest strengthens after the Government shoots protestors."
+            }
+        },
+        {
+            "start_date": {
+                "year":			"2011",
+                "month":		"5",
+                "day": 			"",
+                "hour": 		"",
+                "minute": 		"",
+                "second": 		"",
+                "millisecond": 	"",
+                "format": 		""
+            },
+            "group": "Time",
+            "media": {
+                "caption": "Screencast from 'How is violence spreading?'",
+                "credit": "",
+                "url": "https://youtu.be/K0NfC2N2SzE",
+                "thumb": 	""
+            },
+            "text": {
+                "headline": "Government fights rebels",
+                "text": "Army tanks enter key cities in an effort to crush anti-regime protests. "
+            }
+        },
+        {
+            "start_date": {
+                "year":			"2012",
+                "month":		"7",
+                "day": 			"",
+                "hour": 		"",
+                "minute": 		"",
+                "second": 		"",
+                "millisecond": 	"",
+                "format": 		""
+            },
+            "group": "Time",
+            "media": {
+                "caption": "Screencast from 'How is violence spreading?'",
+                "credit": "",
+                "url": "https://youtu.be/Vn8JaWflGm4",
+                "thumb": 	""
+            },
+            "text": {
+                "headline": "Rebels take Aleppo",
+                "text": "Free Syria Army pushed the government out of the city."
+            }
+        },
+        {
+            "start_date": {
+                "year":			"2014",
+                "month":		"1",
+                "day": 			"",
+                "hour": 		"",
+                "minute": 		"",
+                "second": 		"",
+                "millisecond": 	"",
+                "format": 		""
+            },
+            "end_date": {
+                "year":			"2014",
+                "month":		"3",
+                "day": 			"",
+                "hour": 		"",
+                "minute": 		"",
+                "second": 		"",
+                "millisecond": 	"",
+                "format": 		""
+            },
+            "group": "Time",
+            "media": {
+                "caption": "Screencast from 'How is violence spreading?'",
+                "credit": "",
+                "url": "https://youtu.be/hHp4p_Ag5Fo",
+                "thumb": 	""
+            },
+            "text": {
+                "headline": "ISIS attacks Northern cities",
+                "text": "Lebanon receives more refugees."
+            }
+        },
+        {
+            "start_date": {
+                "year":			"2014",
+                "month":		"9",
+                "day": 			"",
+                "hour": 		"",
+                "minute": 		"",
+                "second": 		"",
+                "millisecond": 	"",
+                "format": 		""
+            },
+            "group": "Time",
+            "media": {
+                "caption": "Screencast from 'How is violence spreading?'",
+                "credit": "",
+                "url": "https://youtu.be/upjvLmXKp0E",
+                "thumb": 	""
+            },
+            "text": {
+                "headline": "Foreign air strikes in key cities",
+                "text": "The US and five Arab countries launch strike against ISIS in Aleppo and Raqqa."
+            }
+        },
+        {
+            "start_date": {
+                "year":			"2014",
+                "month":		"9",
+                "day": 			"",
+                "hour": 		"",
+                "minute": 		"",
+                "second": 		"",
+                "millisecond": 	"",
+                "format": 		""
+            },
+            "end_date": {
+                "year":			"2014",
+                "month":		"9",
+                "day": 			"",
+                "hour": 		"",
+                "minute": 		"",
+                "second": 		"",
+                "millisecond": 	"",
+                "format": 		""
+            },
+            "group": "Time",
+            "media": {
+                "caption": "Screencast from 'How is violence spreading?'",
+                "credit": "",
+                "url": "https://youtu.be/v-DZuR7ibvo",
+                "thumb": 	""
+            },
+            "text": {
+                "headline": "Conflict intensifies in Kobane",
+                "text": "Kurdish forces push ISIS out of Kobane. Lebanon closes its borders and refugee flows to Turkey intensify."
+            }
+        },
+        {
+            "start_date": {
+                "year":			"2015",
+                "month":		"1",
+                "day": 			"",
+                "hour": 		"",
+                "minute": 		"",
+                "second": 		"",
+                "millisecond": 	"",
+                "format": 		""
+            },
+            "end_date": {
+                "year":			"2015",
+                "month":		"3",
+                "day": 			"",
+                "hour": 		"",
+                "minute": 		"",
+                "second": 		"",
+                "millisecond": 	"",
+                "format": 		""
+            },
+            "group": "Time",
+            "media": {
+                "caption": "Screencast from 'How is violence spreading?'",
+                "credit": "",
+                "url": "https://youtu.be/5aT8N-TSsWk",
+                "thumb": 	""
+            },
+            "text": {
+                "headline": "ISIS keeps attacking",
+                "text": "After losing Kobane, ISIS keeps attacking key cities."
+            }
+        },
+        {
+            "start_date": {
+                "year":			"2015",
+                "month":		"3",
+                "day": 			"",
+                "hour": 		"",
+                "minute": 		"",
+                "second": 		"",
+                "millisecond": 	"",
+                "format": 		""
+            },
+            "group": "Time",
+            "media": {
+                "caption": "Screenshot from 'Who is Fighting?'",
+                "credit": "",
+                "url": "img/takeaways/takeaways_08.png",
+                "thumb": 	""
+            },
+            "text": {
+                "headline": "Civilians Keep Suffering",
+                "text": "Almost one third of the reported violence had been targeted at civilians."
+            }
+        },
+        {
+            "start_date": {
+                "year":			"2016",
+                "month":		"1",
+                "day": 			"1",
+                "hour": 		"",
+                "minute": 		"",
+                "second": 		"",
+                "millisecond": 	"",
+                "format": 		""
+            },
+            "end_date": {
+                "year":			"2016",
+                "month":		"4",
+                "day": 			"19",
+                "hour": 		"",
+                "minute": 		"",
+                "second": 		"",
+                "millisecond": 	"",
+                "format": 		""
+            },
+            "group": "Time",
+            "media": {
+                "caption": "Screenshot from 'Who are the Victims?'",
+                "credit": "",
+                "url": "img/takeaways/takeaways_09.png",
+                "thumb": 	""
+            },
+            "text": {
+                "headline": "In 2016, ~5,000 civilian casualties",
+                "text": "Three quarters of victims have been men adults. "
+            }
+        },
+        {
+            "start_date": {
+                "year": "2016",
+                "month": "3",
+                "day": "",
+                "hour": "",
+                "minute": "",
+                "second": "",
+                "millisecond": "",
+                "format": ""
+            },
+            "group": "Time",
+            "media": {
+                "caption": "Screenshot from 'Where are they going?'",
+                "credit": "",
+                "url": "img/takeaways/takeaways_10.png",
+                "thumb": ""
+            },
+            "text": {
+                "headline": "International Solidarity",
+                "text": "Almost 5 million refugees in April 2016."
+            }
+        },
+        {
+            "start_date": {
+                "year":			"2016",
+                "month":		"3",
+                "day": 			"",
+                "hour": 		"",
+                "minute": 		"",
+                "second": 		"",
+                "millisecond": 	"",
+                "format": 		""
+            },
+            "group": "Time",
+            "media": {
+                "caption": "Screenshot from 'Who is helping?'",
+                "credit": "",
+                "url": "img/takeaways/takeaways_11.png",
+                "thumb": 	""
+            },
+            "text": {
+                "headline": "But a lot is yet to be done...",
+                "text": "The countries bearing the heaviest burden of refugees are the least wealthy."
+            }
+        }
+    ]
+}

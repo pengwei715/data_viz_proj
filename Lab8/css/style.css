@@ -1,0 +1,27 @@
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: mediumblue;
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 30px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+h1 .divider {
+	margin: 0 8px;
+}
+
+h1 .sub-headline {
+	color: blue;
+	font-weight: 400;
+}
+
+#station-map {
+    width: 100%;
+    height: 600px;
+}

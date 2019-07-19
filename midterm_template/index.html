@@ -1,0 +1,244 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CS171 - Midterm</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="g-head-wrap" style="height: 600px; background:url(img/malariapage3.jpg);">
+		<img height="26" src="img/logo.png" border="0"></svg>
+		<h1 class="g-headline">All You Need to Know about Marlia</h1>
+		<h2 class="s-headline">Case Study in Africa</h2>
+		<p class="g-byline">
+			By
+			<span class="g-caps">LILY LI</span>
+		</p>
+
+		</div>
+	</div>
+
+	  <div class="container">
+		  <p>Young children, pregnant women and non-immune travellers from malaria-free areas are
+			  particularly vulnerable to the disease when they become infected.</p>
+		  <div class="user-tools">
+			  <i class="fa fa-share fa-2x"></i>
+			  <span class="sharetool-text">SHARE</span>
+			  <i class="fa fa-commenting fa-2x"></i>
+			  <span class="sharetool-text">COMMENT</span>
+		  </div>
+	   </div>
+
+	<div class="container">
+		<div class="page-header">
+		  <h1>About Malaira</h1>
+			<p>
+				Malaria is caused by the Plasmodium parasite and is transmitted by female Anopheles
+				mosquitoes which bite between dusk and dawn. People infected with malaria often experience
+				fever, chills and flu-like illness at first. Left untreated, the disease can lead to severe
+				complications and, in some cases, death.
+			</p>
+		</div>
+
+		<div class="row">
+			<div class="col-md-4">
+				<h2>KEY FACTS </h2>
+			</div>
+			<div class="col-md-8">
+				<!--
+            <div class="user-control">
+                <select id="data-choice" class="form-control form-control-right">
+                    <option class="o1" value="At_risk">Population at risk of malaria infection (percent)</option>
+                    <option value="At_high_risk">Population at <emph>high</emph> risk of malaria infection (percent)</option>
+                    <option value="Suspected_malaria_cases">Number of suspected malaria cases</option>
+                    <option value="Malaria_cases">Number of diagnosed malaria cases</option>
+                    <option value="Detection_rate">Detection rate (share of diagnosed cases of suspected)</option>
+                    <option value="UN_population">UN Population</option>
+                </select>
+            </div>
+            -->
+				<div class="btn-group" role="group" aria-label="...">
+					<button type="button" class="btn btn-default" id="popu">Population</button>
+					<button type="button" class="btn btn-default" id="risk">At Risk</button>
+					<button type="button" class="btn btn-default" id="highrisk">At High Risk</button>
+					<button type="button" class="btn btn-default" id="suspcase">Suspected Malaria Cases</button>
+					<button type="button" class="btn btn-default" id="case">Malaria Cases</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<br>
+				<p class="text-danger">
+					"Malaria is a life-threatening disease caused by parasites that are transmitted to people
+					through the bites of infected female mosquitoes."
+				</p>
+				<ul style="list-style-type:square">
+					<li><b>RISK</b>: About<b><em>3.2 billion people</em></b> – almost half of the world’s population – are at risk of malaria.</li>
+					<br>
+					<li><b>CASES</b>: <b><em>214 million malaria cases</em></b> reported worldwide in 2015.</li>
+					<br>
+					<li><b>INCIDENCE</b>: <b><em>37% global decrease</em></b> in malaria incidence between 2000 and 2015.</li>
+					<br>
+					<li><b>MORTALITY</b>: <b><em>60% decrease</em></b> in global malaria mortality rates between 2000 and 2015.</li>
+				</ul>
+				<p class="text-danger">
+					"Malaria is preventable and curable, and increased efforts are dramatically reducing the malaria burden in many places."
+				</p>
+			</div>
+			<div class="col-md-8">
+				<div id="chart-area"></div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="page-header">
+				<h1>Malaria Cases<br>
+					<small>
+						214 million malaria cases reported worldwide in 2015.
+					</small></h1>
+			</div>
+			<div class="col-md-6">
+				<p>
+					<b>Malaria cases</b>. The number of malaria cases globally fell from an estimated 262 million in 2000 (range: 205– 316 million), to 214 million in
+					2015 (range: 149–303 million), a decline of 18%. Most cases in 2015 are estimated to have occurred in the WHO African Region (88%), followed by the
+					WHO South-East Asia Region (10%) and the WHO Eastern Mediterranean Region (2%).
+				</p>
+				<p>
+					<b>Malaria deaths</b>. The number of malaria deaths globally fell from an estimated 839 000 in 2000 (range: 653 000–1.1 million), to 438 000 in 2015 (range: 236 000–635 000),
+					a decline of 48%. Most deaths in 2015 were in the WHO African Region (90%), followed by the WHO South-East Asia Region (7%) and the WHO Eastern Mediterranean Region (2%).
+					The malaria mortality rate, which takes into account population growth, is estimated to have decreased by 60% globally between 2000 and 2015.
+				</p>
+			</div>
+			<div class="col-md-6">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="img/show1.png">
+					</div>
+
+					<div class="item">
+						<img src="img/show2.png">
+					</div>
+
+					<div class="item">
+						<img src="img/show3.png">
+					</div>
+				</div>
+
+				<!-- Controls -->
+				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="page-header">
+			  <h1>Malaria Parasites <br>
+				  <small>Malaria in humans is caused by five species of parasites belonging to the genus Plasmodium.</small></h1>
+			</div>
+			<p>
+				Four of these – <em>P. falciparum, P. vivax, P. malariae and P. ovale</em> – are human malaria species that are spread
+				from one person to another via the bite of female mosquitoes of the genus Anopheles. There are about 400 different species
+				of Anopheles mosquitoes, but only 30 of these are vectors of major importance. In recent years, human cases of malaria due to
+				<em>P. knowlesi</em> have been recorded – this species causes malaria among monkeys in certain forested areas of South-East Asia.
+				Current information suggests that <em>P. knowlesi</em> malaria is not spread from person to person, but rather occurs in people when an Anopheles
+				mosquito infected by a monkey then bites and infects humans (zoonotic transmission). <em>P. falciparum and P. vivax</em> are the most prevalent,
+				and <em>P. falciparum</em> is the most dangerous, with the highest rates of complications and mortality. Thisdeadly form of malaria is a serious
+				public health concern in most countries in sub-Saharan Africa.
+			</p>
+			<h3>Relationship Diagram<small> (click to show)</small></h3>
+			<div class="col-md-12">
+				<div id="tree-area"></div>
+			</div>
+		</div>
+
+		<!--<img src="img/malariapage.jpg" style="width:475px;"><img src="img/malaria3.jpg" style="width:475px;">-->
+
+		<div class="row">
+			<div class="page-header">
+				<h1>Moving Forward</h1>
+			</div>
+			<div class="col-md-8">
+			<p>
+			To address remaining challenges in global malaria control and elimination, WHO has developed the Global Technical Strategy for Malaria 2016-2030. Adopted by the World Health
+			Assembly in May 2015, the strategy provides a technical framework for all endemic countries as they work towards malaria control and elimination. This Global Technical Strategy
+			sets ambitious but achievable goals for 2030, including: reducing malaria case incidence by at least 90%; reducing malaria mortality rates by at least 90%; eliminating malaria in
+			at least 35 countries; preventing a resurgence of malaria in all countries that are malaria-free. To achieve these targets, annual funding for malaria will need to triple over the
+			next 15-year period, from US$ 2.7 billion (current level of spending) to US$ 8.7 billion by 2030.
+			</p>
+			</div>
+			<div class="col-md-4">
+				<img src="img/malaria4.jpg" style="width:260px">
+			</div>
+		</div>
+		<div id="column" class="row">
+			<div class="page-header">
+				<h1>WHO Recommendation</h1>
+			</div>
+			<div class="col-md-4">
+				<img src="img/malaria1.png" style="width:300px">
+			</div>
+			<div class="col-md-8">
+				<p>
+					International travellers could be at risk of malaria infection in 97 countries around the world, mostly in Africa, Asia and the Americas.
+					Prevention of mosquito bites between dusk and dawn is the first line of defence against malaria. Measures to prevent mosquito bites include
+					sleeping under long-lasting insecticidal nets, and using protective clothing and insect repellents. Depending on the malaria risk in the area
+					to be visited, international travellers may also need to take preventive medication (chemoprophylaxis) prior to, during, and upon return from their travel.
+				</p>
+			</div>
+		</div>
+
+	<br>
+	Note: All picutures are from http://america.aljazeera.com/articles/2015/9/17/malaria-deaths-down.html.
+	</div>
+
+	
+</body>
+	<!-- Load JS libraries -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/queue.min.js"></script>
+	<script src="js/topojson.js"></script>
+	<script src="js/d3.min.js"></script>
+
+	<!-- Choropleth and second visualization -->
+	<script src="js/vis-tree.js"></script>
+	<script src="js/colorbrewer.js"></script>
+
+	<script src="js/vis-choropleth_risk.js"></script>
+	<script src="js/vis-choropleth_case.js"></script>
+	<script src="js/vis-choropleth_population.js"></script>
+	<script src="js/combobox.js"></script>
+
+<!--<script src="js/vis-choropleth_new.js"></script>
+	<script src="js/vis-choropleth.js"></script>
+-->
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,57 @@
+
+
+/**** ADD YOUR STYLES ****/
+body{
+  font-family: "Georgia", Georgia, Serif;
+  margin: 10px;
+  padding: 50px 30px;
+  background-color: cornsilk;
+}
+
+.scatter-plot {
+  stroke: white;
+  stroke-width: 1.5;
+  opacity:0.9;
+}
+
+h1,
+h2 {
+  text-align:center;
+}
+
+h2 {
+  font-size:20px;
+}
+
+/****************/
+/*   BAR-CHART  */
+/****************/
+
+.bar {
+  fill: #3C948B;
+}
+
+.bar:hover {
+  fill: #327972;
+}
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line,
+.domain {
+  fill: none;
+  stroke: #888;
+  shape-rendering: crispEdges;
+}
+
+#chart-area text {
+  font-size: 15px;
+}
+
+.axis-label {
+  fill: crimson;
+  font-size: 20px;
+}

@@ -1,0 +1,103 @@
+
+body{
+    font-family: "Georgia", Georgia, Serif;
+    margin: 10px;
+    padding: 50px 30px;
+    background-color: cornsilk;
+}
+
+h1 {
+    font-size:45px;
+    text-align:center;
+    text-shadow: 2px 2px 5px grey;
+
+}
+
+.serif {
+    font-family: "Georgia", Georgia, Serif;
+}
+
+div#column h2 {
+    font-size:25px;
+    text-shadow: 2px 2px 2px #CCCCCC;
+}
+
+div.col-xs-3 {
+    padding-left: 0px;
+    padding-right: 20px;
+}
+
+div.col-xs-6 {
+    padding-right:0px;
+    padding-left:100px;
+    border-right: thin dotted grey;
+}
+
+/*change the left-hand bar charts*/
+.div {
+    width: 100%;
+}
+
+.div#column {
+    width: 100%;
+}
+
+.bulingname {
+    font-size:12px;
+}
+
+.buildingheight{
+    font-size:15px;
+    fill:white;
+}
+
+/*change the right-hand table setting*/
+th, td {
+    border-bottom: 1px solid #ddd;
+    text-shadow: 2px 2px 2px #CCCCCC;
+    text-align: left;
+}
+
+table#t01 td {
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 15px;
+}
+
+table#t01 tr:hover {
+    background-color: #f5f5f5;
+}
+
+div#column p{
+    font-family: "Georgia", Georgia, Serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*change the bar chat: show click*/
+
+.bar-chat:hover {
+    fill: pink;
+}
+
+.buildingname:hover {
+    fill: deeppink;
+}
+
+.bar-chat,
+.buildingname {
+    font-family: "Georgia", Georgia, Serif;
+    transition: fill .3s ease;
+    cursor: pointer;
+}
+
+/*change the image*/
+
+img {
+    width:320px;
+    /*padding-left:20px;*/
+    border:1px solid #021a40;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4), 0 10px 30px 0 rgba(0, 0, 0, 0.6);
+
+}

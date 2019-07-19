@@ -1,0 +1,188 @@
+
+/* ADD YOUR STYLES HERE */
+
+body{
+  margin: 20px 40px 20px 40px;
+}
+
+.header{
+  background-color: #ffffff;
+  background-image: url("http://svavenwedde.de/fileadmin/img/panorama.png");
+  /*background-repeat: no-repeat;*/
+  background-position: top center;
+  height: 200px;
+  padding: 0em 0em 0em 0em;
+  margin: 5px 0px 15px 0px;
+}
+
+h1{
+  color: white;
+  padding: 90px 20px 0px 20px;
+}
+
+h2{
+  color: white;
+  padding: 0px 20px 0px 20px;
+}
+
+h3{
+  color: darkgreen;
+  font-size: 1.5em;
+}
+
+
+
+
+
+table, th, td {
+  /*border: 1px solid black;*/
+  border-collapse: collapse;
+  text-align:right;
+  font-size: 1em;
+}
+
+td.lefttab {
+  text-align: left;
+}
+
+th, td {
+  padding: 5px;
+}
+
+.nopadding {
+  padding: 0px;
+}
+
+.largepadding {
+  padding: 20px;
+}
+
+tr:nth-child(even) {background: white;
+  border-top-style: solid;
+  border-top-color:darkgreen;
+  border-top-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color:darkgreen;
+  border-bottom-width: 1px;}
+tr:nth-child(odd) {background: white;  }
+
+/*tr:hover {
+  color: white;
+  background: #3F435E;
+}*/
+
+
+
+/****************/
+/*  LINE CHART  */
+/****************/
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.axis text {
+  font-size: 12px;
+}
+
+.line {
+  fill: none;
+  stroke: #1C9A3D;
+  stroke-width: 2.5px;
+}
+
+.tooltip-circle {
+  fill: #96AB96;
+}
+
+
+/*********************/
+/*  TOOLTIP OVERLAY  */
+/*********************/
+
+.tooltip-title {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.d3-tip {
+  line-height: 1.5;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+
+.circle{
+  fill: lightgrey;
+}
+
+.circle:hover{
+  cursor:pointer;
+  fill: url(#image);
+}
+.selected{
+  fill: url(#image);
+}
+
+
+
+.form-control {
+  background: white;
+  border: 1px solid #DDD;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #DDD inset;
+  color: #666;
+  outline: none;
+  font-size: 0.9em;}
+.o1 { color: #000000;
+  font-family: Verdana,sans-serif;
+  background-color: #FFFFE6; }
+
+.text-input {
+  background: white;
+  border: 1px solid #DDD;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #DDD inset;
+  color: #666;
+  outline: none;
+}
+
+
+
+.text-input:focus,
+.form-control:focus{
+    outline: none;
+  border: 1px solid darkgreen;
+  box-shadow: 0px 0px 8px darkgreen;
+  -moz-box-shadow: 0px 0px 8px darkgreen;
+  -webkit-box-shadow: 0px 0px 8px darkgreen;
+}
+
+
+
+
